@@ -5,15 +5,23 @@ class TwoNumbersMath{
  {  
    int sum = 0;
    
-   String input = JOptionPane.showInputDialog( "s" + "s");
+   String first = JOptionPane.showInputDialog( "Give me a number!" );
+   String second = JOptionPane.showInputDialog( "Give me another number!" );
    
-   System.out.println ( input );
+   int one = Integer.parseInt ( first );
+   int two = Integer.parseInt ( second );
    
-   int num = Integer.parseInt ( input );
+      sum = one + two ;
+   System.out.println ( first +"+"+ second +"="+ sum );
+      sum = one - two ;
+   System.out.println ( first +"-"+ second +"="+ sum );
+      sum = one * two ;
+   System.out.println ( first +"*"+ second +"="+ sum );
+      sum = one / two ;
+   System.out.println ( first +"/"+ second +"="+ sum ); 
+      sum = one % two ;
+   System.out.println ( first +"%"+ second +"="+ sum );  
    
-   sum = 5 + num;
    
-   System.out.println ( sum );
-
  }  // end main
 }   // end class InputData
