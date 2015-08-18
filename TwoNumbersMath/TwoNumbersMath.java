@@ -13,18 +13,21 @@ public class TwoNumbersMath{
    
    sum = one + two ;
    System.out.println ( first +"+"+ second +"="+ sum );
-   
+   System.out.println ( second +"+"+ first +"="+ sum );   
    sum = one - two ;
    System.out.println ( first +"-"+ second +"="+ sum );
-   
+   sum = two - one ;
+   System.out.println ( second +"-"+ first +"="+ sum );   
    sum = one * two ;
    System.out.println ( first +"*"+ second +"="+ sum );
-   
+   System.out.println ( second +"*"+ first +"="+ sum );
    sum = one / two ;
    System.out.println ( first +"/"+ second +"="+ sum ); 
-   
+   sum = two / one ;
+   System.out.println ( second +"/"+ first +"="+ sum ); 
    sum = one % two ;
-   System.out.println ( first +"%"+ second +"="+ sum );  
-   
+   System.out.println ( first +"%"+ second +"="+ sum ); 
+   sum = two % one ;
+   System.out.println ( second +"%"+ first +"="+ sum );    
  }  // end main
 }   // end class TwoNumbersMaths
