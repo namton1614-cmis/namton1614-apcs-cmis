@@ -13,4 +13,4 @@ public class HelloUserAge
    sc.close();  
 
   } // end main
-} // end class Scanner
+} // end class HelloUserAge

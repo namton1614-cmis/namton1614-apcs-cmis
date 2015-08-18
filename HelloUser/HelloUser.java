@@ -11,4 +11,4 @@ public class HelloUser
     System.out.println( "Hello, " + statement + ".");
 
   } // end main
-} // end class Scanner
+} // end class HelloUser
