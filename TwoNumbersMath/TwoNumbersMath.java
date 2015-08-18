@@ -27,4 +27,4 @@ public class TwoNumbersMath{
    System.out.println ( first +"%"+ second +"="+ sum );  
    
  }  // end main
-}   // end class TwoNumbersMath
+}   // end class TwoNumbersMaths
