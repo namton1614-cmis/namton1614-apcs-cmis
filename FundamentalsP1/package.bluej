@@ -1,3 +1,25 @@
 #BlueJ package file
-#Tue Aug 18 09:42:02 ICT 2015
+objectbench.height=76
+objectbench.width=686
+package.editor.height=400
+package.editor.width=560
+package.editor.x=290
+package.editor.y=164
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
 project.charset=UTF-8
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=477
+target1.editor.y=175
+target1.height=50
+target1.name=FundamentalsP1
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=140
+target1.x=70
+target1.y=10
