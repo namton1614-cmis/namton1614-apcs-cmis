@@ -1,10 +1,10 @@
 #BlueJ package file
 objectbench.height=76
-objectbench.width=686
-package.editor.height=401
-package.editor.width=560
-package.editor.x=290
-package.editor.y=164
+objectbench.width=1580
+package.editor.height=711
+package.editor.width=1454
+package.editor.x=-3
+package.editor.y=0
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
@@ -12,8 +12,8 @@ package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=701
-target1.editor.x=778
-target1.editor.y=35
+target1.editor.x=232
+target1.editor.y=130
 target1.height=50
 target1.name=TwoNumbersMath
 target1.naviview.expanded=true
