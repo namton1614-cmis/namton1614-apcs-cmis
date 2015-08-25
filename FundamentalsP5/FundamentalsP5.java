@@ -21,16 +21,11 @@ public class FundamentalsP5
     FavSong[2] = "Breathless";
     
     int SongNumber = FavSong.length;
-    for (int i = 0; i < MovieNumber-1; i++)
+    for (int i = 0; i < SongNumber-1; i++)
         {
          System.out.print( FavSong [i] + ", "  );  
         }   
-    if  ( MovieNumber ==2)
-         {        
-             System.out.print( FavSong [i] + ", "  );  
-            }
+    System.out.print( FavSong [FavSong.length-1] + ".\n"  );  
 
-    
-     System.out.println( );    
 }// end main
 } // end class FundamentalsP5
