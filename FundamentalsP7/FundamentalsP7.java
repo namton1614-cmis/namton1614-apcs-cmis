@@ -27,7 +27,7 @@ public class FundamentalsP7
           System.out.print( intHold[ index ] + " \n" );    
       
         } //end for
-      System.out.println( "Number of positive integers =" + x + "\n" );    
+      System.out.println( "Number of positive integers = " + x + "\n" );    
       
     }//end main
 }// end class FundamentalsP7
