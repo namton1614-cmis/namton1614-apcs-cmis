@@ -24,7 +24,7 @@ public class FundamentalsP8
 
        if ( singers[index].equals("Michael Jackson"))
        {
-               System.out.println( "We have found Michael Jackson." );
+               System.out.println( "We have found Michael Jackson!" );
         }
         else
        {
