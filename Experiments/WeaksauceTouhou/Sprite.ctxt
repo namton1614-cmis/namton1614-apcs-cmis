@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Sprite()
+comment1.params=
+comment1.target=void\ die()
+comment10.params=dying
+comment10.target=void\ setDying(boolean)
+comment11.params=
+comment11.target=boolean\ isDying()
+comment2.params=
+comment2.target=boolean\ isVisible()
+comment3.params=visible
+comment3.target=void\ setVisible(boolean)
+comment4.params=image
+comment4.target=void\ setImage(java.awt.Image)
+comment5.params=
+comment5.target=java.awt.Image\ getImage()
+comment6.params=x
+comment6.target=void\ setX(int)
+comment7.params=y
+comment7.target=void\ setY(int)
+comment8.params=
+comment8.target=int\ getY()
+comment9.params=
+comment9.target=int\ getX()
+numComments=12

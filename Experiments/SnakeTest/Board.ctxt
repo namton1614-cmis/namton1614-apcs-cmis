@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Board()
+comment1.params=
+comment1.target=void\ loadImages()
+comment10.params=e
+comment10.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=
+comment2.target=void\ initGame()
+comment3.params=g
+comment3.target=void\ paintComponent(java.awt.Graphics)
+comment4.params=g
+comment4.target=void\ doDrawing(java.awt.Graphics)
+comment5.params=g
+comment5.target=void\ gameOver(java.awt.Graphics)
+comment6.params=
+comment6.target=void\ checkApple()
+comment7.params=
+comment7.target=void\ move()
+comment8.params=
+comment8.target=void\ checkCollision()
+comment9.params=
+comment9.target=void\ locateApple()
+numComments=11

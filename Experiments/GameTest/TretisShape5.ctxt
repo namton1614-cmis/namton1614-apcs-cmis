@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TretisShape5()
+comment1.params=
+comment1.target=void\ coordinates()
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ shape()
+comment4.params=
+comment4.target=void\ shapeOnItsSide()
+comment5.params=
+comment5.target=void\ checkColumn()
+comment6.params=
+comment6.target=void\ checkRow()
+comment7.params=e
+comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=8

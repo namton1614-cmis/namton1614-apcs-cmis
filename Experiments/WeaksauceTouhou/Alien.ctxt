@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=Alien(int,\ int)
+comment1.params=direction
+comment1.target=void\ act(int)
+comment2.params=
+comment2.target=Alien.Bomb\ getBomb()
+numComments=3
