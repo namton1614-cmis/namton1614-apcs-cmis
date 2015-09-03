@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=statusbar
+comment0.target=Board(javax.swing.JLabel)
+comment1.params=
+comment1.target=void\ newGame()
+comment2.params=j
+comment2.target=void\ find_empty_cells(int)
+comment3.params=g
+comment3.target=void\ paintComponent(java.awt.Graphics)
+numComments=4
