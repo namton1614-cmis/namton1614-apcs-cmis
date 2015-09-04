@@ -5,12 +5,11 @@ public class TestOne
     {
       String ask = JOptionPane.showInputDialog( "Give me a number!" );
       int s = Integer.parseInt ( ask );
-        
-      int[] intHold = new int[s];        
+      int [] intHold = new int [s];        
       for ( int index = 0; index < intHold.length; index++ )
       {
          
-           intHold[ index ] = (int)(Math.random()*50); 
+            intHold[ index ] = (int)(Math.random()*50); 
 
            System.out.print( index + ":" + intHold[ index ] + " \n"  );    
 
@@ -21,41 +20,36 @@ public class TestOne
         while ( index >= 0   )
       {
           
-         
+        int k =intHold[ index ] % 2;
 
-    int k =intHold[ index ] % 2;
-
-   if( k ==1 )
+        if( k ==1 )
 
         {      System.out.print( index + ":");
-           int as = 0;
-            while ( as < intHold[ index ] )
+           int counter = 0;
+
+            while ( counter < intHold[ index ] )
             {
            System.out.print( "O")    ;
-           index++;
+           counter++;
         }
            System.out.print( intHold[ index ] + " \n" );            
         }
-   else 
+       else 
         {
              System.out.print( index + ":");
-            int as = 0;
-            while ( as < intHold[ index ] )
+            int counter = 0;
+
+            while ( counter < intHold[ index ] )
             {
            System.out.print( "E")    ;
-           index++;
+           counter++;
         }
            System.out.print( intHold[ index ] + " \n" );      
         }           
         
-        
           index--;
                    
         } //end for               
-        
-        
-
-       
-      
+     
     }//end main
 }// end class TestOne
