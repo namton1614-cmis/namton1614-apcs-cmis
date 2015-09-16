@@ -10,7 +10,8 @@ public class Histogram
         int sum = 0;
         int max = 0;
         int min = 99;
-        int mode = 0;
+        int most = 0;
+        int mostPart = 0;
         for ( int index = 0; index < randomNumbers.length; index++ )
         {
 
@@ -34,12 +35,10 @@ public class Histogram
             System.out.println( ""  );    
         }        
         // end histogram generation
-        for (int i : randomNumbers)
-        { 
-            sum += i ;
-        }
         for ( int index = 0; index < length; index++ )
         {
+            int sumPart = randomNumbers [index];          
+            sum += sumPart ;
             if (randomNumbers [index] >= max)
             {
                 max = randomNumbers [ index];
@@ -49,11 +48,12 @@ public class Histogram
                 min = randomNumbers [ index];
             }
         }
-        for ( int index = 0; index <= 99; index++ )
+        for ( int index = 0; index < count.length; index++ )
         {
-            if (count [index] >= mode)
+            if (count [index] >= mostPart)
             {
-                mode = count[index];
+                mostPart = count [index];
+                most = index;
             }
         }
 
@@ -61,6 +61,6 @@ public class Histogram
         System.out.println( "MAX:" + max  );
         System.out.println( "SUM:" + sum  );   
         System.out.println( "AVG:" + sum/length  );    
-        System.out.println( "MST:" + mode );    
+        System.out.println( "MST:" + most );    
     } // end main
-}
+}// end class
