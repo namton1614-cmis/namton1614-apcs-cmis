@@ -16,14 +16,9 @@ public class Histogram
         {
 
             randomNumbers[ index ] = (int)(Math.random()*100); 
-
-        } //end for  
-        for ( int index = 0; index <length; index++ )
-        {
             int counter= randomNumbers[ index ];
             count[counter]++;
-
-        }
+        } //end for  
         for ( int index = 0; index <= 99; index++ )
         {
             System.out.print( index + ":"  );    
@@ -60,7 +55,7 @@ public class Histogram
         System.out.println( "MIN:" + min  );           
         System.out.println( "MAX:" + max  );
         System.out.println( "SUM:" + sum  );   
-        System.out.println( "AVG:" + sum/length  );    
+        System.out.println( "AVG:" + (double)sum/length  );    
         System.out.println( "MST:" + most );    
     } // end main
 }// end class
