@@ -25,7 +25,6 @@ public class Histogram
             for (int newindex = 0; newindex < count[index]; newindex++)
             {
                 System.out.print( "#" );    
-
             }
             System.out.println( ""  );    
         }        
