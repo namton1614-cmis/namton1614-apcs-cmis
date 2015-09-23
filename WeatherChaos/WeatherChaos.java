@@ -24,7 +24,7 @@ public class WeatherChaos
         }
         else
         {
-            System.out.println("day   temp   swing   description");
+            System.out.println("day  temp  swing  description");
 
             for ( int index = 0; index < weatherTemps.length; index++ )
             {
@@ -79,8 +79,7 @@ public class WeatherChaos
             System.out.println( "The maximum temperature was " + max +" on day " +maxday +"." );
             System.out.println( "The average temperature was " + (double)sum/weatherTemps.length  +".");
             System.out.println( "The biggest temperature swing was " + maxSwing+" degrees between day " 
-            + (swingday) + " and day " + (swingday+1) + "." );
+                + (swingday) + " and day " + (swingday+1) + "." );
         }
-
     } // end main
-}// end class
+}// end class}
