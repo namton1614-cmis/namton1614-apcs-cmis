@@ -1,27 +1,32 @@
-
 public class ThreeFive
 {
     public static void main (String argvs [] )
     {
-        int max = 0;
         int x = 0;
-        int y = 0;
+        int y =0; 
+        int z =0;
         for (int r = 1; r < 1000; r++)
         {
-            int k = r % 3;
-            int v = r % 5;
-            if (k==0)
+            int threemultiples = r % 3;
+            int fivemultiples = r % 5;
+            int fifteenmultiples = r % 15;            
+            if (threemultiples==0)
             {
                 x +=  r ;  
             }
-            if (v==0)
+            if (fivemultiples==0)
             {
                 y += r ;
             }
-            System.out.println(r+ ":"+ y  ); 
-            System.out.println(r+ ":"+ x  ); 
+             if (fifteenmultiples==0)
+            {
+                z += r ;
+            }
+            System.out.println(r+ "Y:"+ y  ); 
+            System.out.println(r+ "X:"+ x  ); 
+            System.out.println(r+ "Z:"+ z  );             
         }
-        int sum = x+y;
+        int sum = x+y-z;
         System.out.println(sum ); 
     }
 }
