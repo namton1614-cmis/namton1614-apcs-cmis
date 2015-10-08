@@ -6,11 +6,11 @@ public class Clock
     private int second;
     public Clock()
     {
-        hour =12;
-        minute = 32;
-        second = 34;
+        hour =0;
+        minute =0;
+        second =0;
 
-    } //end constructor Song
+    } //end constructor Clock
     public Clock ( int hour, int minute, int second)
     {
         this.hour = hour;
