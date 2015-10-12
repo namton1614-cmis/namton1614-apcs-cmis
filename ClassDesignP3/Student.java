@@ -1,27 +1,30 @@
 
 public class Student
 {
-    private double songLength;
-    private String artist;
-    private String name;
+    private int gradelevel;
+    private String firstname;
+    private String lastname;
+    private double gpa;
     public Student()
     {
-        songLength =18.38;
-        artist = new String ("Wagner");
-        name = new String ("Siegfried-Idyll");
-
+        gradelevel =12;
+        firstname = new String ("Mina");
+        lastname = new String ("Hakuba");
+        gpa = 3.75;
     } //end constructor Song
-    public Student (String name, String artist, double songLength)
+    public Student (String firstname, String lastname, int gradelevel, double gpa)
     {
-        this.name = new String (name);
-        this.artist = new String (artist);
-        this.songLength = songLength;
+        this.firstname = new String (firstname);
+        this.lastname = new String (lastname);
+        this.gradelevel = gradelevel;
+        this.gpa = gpa;
     }
+
     public String toString( )
     {
         String output = new String();
-        output = "Song name is " + name  + ".\nArtist is " + 
-        artist + ".\nThe song is " + songLength +" minutes long." ;
+        output = "'s full name is " + firstname +" " +lastname + " and has a gpa of "  + 
+        gpa + " studying at grade "+ gradelevel +"." ;
         return output;
     }
 }
