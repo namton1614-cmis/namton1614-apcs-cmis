@@ -1,30 +1,29 @@
 
 public class Drill
 {
-    private int gradelevel;
-    private String firstname;
-    private String lastname;
-    private double gpa;
-    public Drill()
-    {
-        gradelevel =12;
-        firstname = new String ("Mina");
-        lastname = new String ("Hakuba");
-        gpa = 3.75;
-    } //end constructor Song
-    public Drill (String firstname, String lastname, int gradelevel, double gpa)
-    {
-        this.firstname = new String (firstname);
-        this.lastname = new String (lastname);
-        this.gradelevel = gradelevel;
-        this.gpa = gpa;
-    }
-
+    private boolean electric;
+    private String brand;
+    private double price; 
     public String toString( )
     {
-        String output = new String();
-        output = "'s full name is " + firstname +" " +lastname + " and has a gpa of "  + 
-        gpa + " studying at grade "+ gradelevel +"." ;
-        return output;
+        return String.format( 
+            "Brand: %s\n" +
+            "Price:%.2f\n" + 
+            "Electric: %s" ,
+            brand,price,electric ? "Electric" : "Diesel");
     }
+
+    public Drill()
+    {
+        price = 19.75 ;
+        brand = new String ("Makitec");
+        electric =true ;
+    } //end constructor Song
+    public Drill (String brand, int price, boolean electic)
+    {
+        this.price = price;
+        this.brand = new String (brand);
+        this.electric = electric;
+    }
+
 }
