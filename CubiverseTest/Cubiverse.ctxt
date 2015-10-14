@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ toString()
+comment1.params=w\ h\ d\ name
+comment1.target=Cubiverse(int,\ int,\ int,\ java.lang.String)
+comment2.params=x\ y\ z\ name
+comment2.target=Cubiverse(double,\ double,\ double,\ java.lang.String)
+comment3.params=
+comment3.target=Cubiverse()
+numComments=4
