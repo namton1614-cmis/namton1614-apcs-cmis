@@ -7,7 +7,7 @@ public class Cards
     {
         return String.format( 
             "Suit: %s\n" +
-            "Rank:%.s\n" , 
+            "Rank: %s\n" , 
             suit,rank);
     }
 
@@ -17,7 +17,7 @@ public class Cards
         rank = new String ("queen");
 
     } 
-    public Cards (String suit, String value)
+    public Cards (String suit, String rank)
     {
         this.suit = new String (suit);
         this.rank = new String (rank);

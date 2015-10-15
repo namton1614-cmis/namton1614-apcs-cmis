@@ -2,23 +2,20 @@
 public class CardsDriver {
     public static void main (String argvs [] )
     {
-        String [] cardCount = new String [3];
-        int suit;
-        int rank;
-        
-                for ( int index = 0; index < cardCount.length; index++ )
+        Cards [] myHand = new Cards [3];
+        String suit;
+        String rank;       
+        String [] suitMode = { "Clubs" , "Spades", "Hearts", "Diamonds"};
+        String [] rankMode = { "2", "3", "4" , "5" , "6", "7", "8" ,"9" , "10", "Jack", "Queen" , "King", "Ace"};
+        int suitNo;
+        int rankNo;
+        for ( int i = 0; i < myHand.length; i++ )
         {
-            suit = 
-            rank = 
-            cardC[ index ] = (int)(Math.random()*100); 
-            int counter= randomNumbers[ index ];
-            count[counter]++;
+
+            suit = suitMode [(int)(Math.random()*4)];
+            rank = rankMode [(int)(Math.random()*13)];
+            myHand[ i ] = new Cards( suit, rank );
+            System.out.println("Card " +(i+1)+"\n" +myHand[i] );
         } //end for
-        
-        Cards drill1 = new Cards ();
-        System.out.println ( drill1.toString());
-        Cards drill2 = new Cards ("Spades", "King");
-        System.out.println ( drill2.toString());       
-        
     }
-} //end class StudentDriver
+} //end class CardDriver
