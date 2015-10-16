@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ toString()
+comment1.params=
+comment1.target=Planet()
+comment2.params=maxPopulation\ percentSpaceMarines\ maxSpaceMarinesPerStarDestroyer
+comment2.target=Planet(int,\ double,\ int)
+numComments=3
