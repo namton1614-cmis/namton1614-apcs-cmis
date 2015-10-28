@@ -299,6 +299,7 @@ public class BlackjackDriver {
                 +"\nPlayer 5 Card " +(i+1)+"\n" +player5[i]);
 
         } //end for
+        
         int dealerSum =dealerScore[0]+dealerScore[1];
         int player1Sum =player1Score[0]+player1Score[1];
         int player2Sum =player2Score[0]+player2Score[1];
