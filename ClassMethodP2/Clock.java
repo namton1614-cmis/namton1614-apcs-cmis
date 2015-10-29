@@ -11,16 +11,34 @@ public class Clock
         second =0;
 
     } //end constructor Clock
+
     public Clock ( int hour, int minute, int second)
     {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
+
+    public void setTime (int hour, int minute, int second)
+    {
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+
+    }
+
+    public int totalSeconds()
+    {
+
+       int output = (hour*3600)+(minute*60)+(second);
+        return output;
+
+    }
+
     public String toString( )
     {
         String output = new String();
-        output =  "The time is " + hour + ":" +  minute + ":" + second ;
+        output =  "The time is " + hour + ":" +  minute + ":" + second + "\nTotal seconds is " +  totalSeconds() ;
         return output;
     }
 }
