@@ -6,9 +6,6 @@ public class Clock
     private int second;
     public Clock()
     {
-        hour =0;
-        minute =0;
-        second =0;
 
     } //end constructor Clock
 
@@ -17,6 +14,18 @@ public class Clock
         this.hour = hour;
         this.minute = minute;
         this.second = second;
+    }
+
+    public void convertDaylightSaving( int hours )
+    {
+        double rand=Math.random();
+        if (rand > 0.5)
+        {
+            this.hour = hour+1;
+        }
+        else {
+            this.hour = hour-1;
+        }
     }
 
     public void setTime (int hour, int minute, int second)
@@ -30,7 +39,7 @@ public class Clock
     public int totalSeconds()
     {
 
-       int output = (hour*3600)+(minute*60)+(second);
+        int output = (hour*3600)+(minute*60)+(second);
         return output;
 
     }

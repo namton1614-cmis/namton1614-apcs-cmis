@@ -20,7 +20,7 @@ class Planet
             "Star Destroyers: %d\n" +
             "Space Marines per star destroyer: %.2f\n" ,
             name[ (int)(Math.random()*4)],rand, relation[ (int)(Math.random()*5)],
-            radius,(int)((Math.random()*maxPopulation+1)),percentSpaceMarines,(int)(maxPopulation*percentSpaceMarines),
+            radius,(int)((Math.random()*maxPopulation)),percentSpaceMarines,(int)(maxPopulation*percentSpaceMarines),
             (int)(Math.random()*maxSpaceMarinesPerStarDestroyer+1),
             (double)((int)((maxPopulation*percentSpaceMarines)/maxSpaceMarinesPerStarDestroyer)/(int)(maxPopulation*percentSpaceMarines)));
     }
