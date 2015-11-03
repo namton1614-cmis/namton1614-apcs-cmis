@@ -3,7 +3,9 @@ public class StudentDriver {
     public static void main (String argvs [] )
     {
         Student senior001 = new Student ();
-        System.out.println ( "Senior001" +senior001);
+        System.out.println ( senior001);
+        Student junior001 = new Student ("Joe", "Senior", 12);
+        System.out.println ( junior001);
 
         String input = JOptionPane.showInputDialog( "English" );
         double en = Integer.parseInt ( input );
@@ -15,11 +17,11 @@ public class StudentDriver {
         double art = Integer.parseInt ( input4 );
         String input5 = JOptionPane.showInputDialog( "Social Science" );
         double social = Integer.parseInt ( input5 );
-        double grade []= { en, math, science, art, science};
-        senior001.setGPA( grade );
-
-        Student junior001 = new Student ("Graham", "Jones", 11, 4.00);
-        System.out.println ( "Junior001" +junior001);
-
+        // setting various gpa of various classes
+        double grades []= { en, math, science, art, science};
+        // stored in array
+        junior001.setGPA( grades);
+        // change gpa with setter method
+        System.out.println ( junior001);
     }
 } //end class StudentDriver
