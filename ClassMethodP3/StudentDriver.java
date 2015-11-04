@@ -8,7 +8,7 @@ public class StudentDriver {
         System.out.println ( junior001);
 
         String input = JOptionPane.showInputDialog( "English" );
-        double en = Integer.parseInt ( input );
+        double english = Integer.parseInt ( input );
         String input2 = JOptionPane.showInputDialog( "Math" );
         double math = Integer.parseInt ( input2 );
         String input3 = JOptionPane.showInputDialog( "Science" );
@@ -18,7 +18,7 @@ public class StudentDriver {
         String input5 = JOptionPane.showInputDialog( "Social Science" );
         double social = Integer.parseInt ( input5 );
         // setting various gpa of various classes
-        double grades []= { en, math, science, art, science};
+        double grades []= { english, math, science, art, social};
         // stored in array
         junior001.setGPA( grades);
         // change gpa with setter method

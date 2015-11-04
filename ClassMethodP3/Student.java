@@ -35,13 +35,12 @@ public class Student
     {
 
         double output;
-        this.gpaSum=gpaSum;
         for (int i = 0; i<grades.length; i++) 
         {
             gpaSum+=grades[i];
 
         } 
-        this.gpaSum=gpaSum;
+
         output = gpaSum/5;
 
         return output;
@@ -58,9 +57,9 @@ public class Student
                 +  "Fine Arts gpa = %.2f\n" 
                 +  "Social Science gpa = %.2f\n" 
                 +  "Average gpa = %.2f\n" 
-                + "Grade Level = %d\n"
-                + "AJFB = %.2f\n",
-                firstname, lastname, (calcGPA()),grades[0], grades[1],grades[2],grades[3],grades[4],gradelevel, gpaSum)
+                + "Grade Level = %d\n",
+
+                firstname, lastname,grades[0], grades[1],grades[2],grades[3],grades[4],(calcGPA()), gradelevel)
         ;
         return output; 
     }
