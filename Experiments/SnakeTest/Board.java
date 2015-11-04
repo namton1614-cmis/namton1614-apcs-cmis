@@ -68,7 +68,7 @@ public class Board extends JPanel implements ActionListener {
 
     private void initGame() {
 
-        dots = 3;
+        dots = 70;
 
         for (int z = 0; z < dots; z++) {
             x[z] = 50 - z * 10;
@@ -112,7 +112,7 @@ public class Board extends JPanel implements ActionListener {
 
     private void gameOver(Graphics g) {
         
-        String msg = "Game Over";
+        String msg = "You have been spooked.";
         Font small = new Font("Helvetica", Font.BOLD, 14);
         FontMetrics metr = getFontMetrics(small);
 
