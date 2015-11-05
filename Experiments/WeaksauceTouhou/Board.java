@@ -55,7 +55,7 @@ public class Board extends JPanel implements Runnable, Commons {
 
         aliens = new ArrayList();
 
-        ImageIcon ii = new ImageIcon("aliens.png");
+        ImageIcon ii = new ImageIcon("images/alien.png");
 
         for (int i=0; i < 4; i++) {
             for (int j=0; j < 6; j++) {

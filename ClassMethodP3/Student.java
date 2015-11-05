@@ -5,7 +5,6 @@ public class Student
     private String firstname;
     private String lastname;
     private double [] grades = new double  [5];
-    public double gpaSum;
     public Student()
     {
         for (int i = 0; i<grades.length; i++) 
@@ -33,7 +32,7 @@ public class Student
 
     public double calcGPA()
     {
-
+        double gpaSum = 0;
         double output;
         for (int i = 0; i<grades.length; i++) 
         {
@@ -43,6 +42,37 @@ public class Student
 
         output = gpaSum/5;
 
+        return output;
+    }
+
+    public String getGrade()
+    {
+        String output = new String();
+        String letterGrade ="";
+        double compare = calcGPA();
+        System.out.println( calcGPA());
+        if (compare <1)
+        {
+            letterGrade = "F";
+        }
+        if (compare >=1)
+        {
+            letterGrade = "D";
+        } 
+        if (compare >2)
+        {
+            letterGrade = "C";
+        }
+        if (compare >3)
+        {
+            letterGrade ="B";
+        }
+        if (compare ==4)
+        {
+            letterGrade ="A";
+        }
+
+        output = "" + letterGrade;
         return output;
     }
 
@@ -57,9 +87,11 @@ public class Student
                 +  "Fine Arts gpa = %.2f\n" 
                 +  "Social Science gpa = %.2f\n" 
                 +  "Average gpa = %.2f\n" 
-                + "Grade Level = %d\n",
+                + "Grade Level = %d\n"
+                + "Letter Grade =%s\n",
 
-                firstname, lastname,grades[0], grades[1],grades[2],grades[3],grades[4],(calcGPA()), gradelevel)
+                firstname, lastname,grades[0], grades[1],grades[2],grades[3],grades[4],(calcGPA()), 
+                gradelevel, getGrade())
         ;
         return output; 
     }

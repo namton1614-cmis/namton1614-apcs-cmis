@@ -1,4 +1,3 @@
- 
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -87,9 +86,9 @@ public class Board extends JPanel implements ActionListener {
 
         doDrawing(g);
     }
-    
+
     private void doDrawing(Graphics g) {
-        
+
         if (inGame) {
 
             g.drawImage(apple, apple_x, apple_y, this);
@@ -111,7 +110,7 @@ public class Board extends JPanel implements ActionListener {
     }
 
     private void gameOver(Graphics g) {
-        
+
         String msg = "You have been spooked.";
         Font small = new Font("Helvetica", Font.BOLD, 14);
         FontMetrics metr = getFontMetrics(small);
@@ -125,7 +124,8 @@ public class Board extends JPanel implements ActionListener {
 
         if ((x[0] == apple_x) && (y[0] == apple_y)) {
 
-            dots++;
+            dots++;      dots++;        dots++;        dots++;       dots++;
+            dots++;      dots++;        dots++;        dots++;       dots++;
             locateApple();
         }
     }
@@ -178,7 +178,7 @@ public class Board extends JPanel implements ActionListener {
         if (x[0] < 0) {
             inGame = false;
         }
-        
+
         if(!inGame) {
             timer.stop();
         }

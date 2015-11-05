@@ -13,7 +13,7 @@ public class Player extends Sprite implements Commons{
 
     public Player() {
 
-        ImageIcon ii = new ImageIcon(this.getClass().getResource(player));
+        ImageIcon ii = new ImageIcon("images/alien.png");
 
         width = ii.getImage().getWidth(null); 
 
