@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Hiro()
+comment1.params=
+comment1.target=int\ getAtk()
+comment2.params=name
+comment2.target=void\ setName(java.lang.String)
+comment3.params=
+comment3.target=int\ getHp()
+comment4.params=hp
+comment4.target=void\ setHp(int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ \ \ \ public\ double\ calcGPA()\r\n\ \ \ \ {\r\n\ \ \ \ double\ gpaSum\ \=\ 0;\r\n\ \ \ \ double\ output;\r\n\ \ \ \ for\ (int\ i\ \=\ 0;\ i<grades.length;\ i++)\ \r\n\ \ \ \ {\r\n\ \ \ \ gpaSum+\=grades[i];\r\n\r\n\ \ \ \ }\ \r\n\r\n\ \ \ \ output\ \=\ gpaSum/5;\r\n\r\n\ \ \ \ return\ output;\r\n\ \ \ \ }\r\n\r\n
+numComments=6
