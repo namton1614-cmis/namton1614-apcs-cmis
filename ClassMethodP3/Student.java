@@ -50,7 +50,6 @@ public class Student
         String output = new String();
         String letterGrade ="";
         double compare = calcGPA();
-        System.out.println( calcGPA());
         if (compare <1)
         {
             letterGrade = "F";
@@ -88,7 +87,7 @@ public class Student
                 +  "Social Science gpa = %.2f\n" 
                 +  "Average gpa = %.2f\n" 
                 + "Grade Level = %d\n"
-                + "Letter Grade =%s\n",
+                + "Letter Grade = %s\n",
 
                 firstname, lastname,grades[0], grades[1],grades[2],grades[3],grades[4],(calcGPA()), 
                 gradelevel, getGrade())
