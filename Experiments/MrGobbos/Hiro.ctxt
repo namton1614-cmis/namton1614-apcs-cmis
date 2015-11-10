@@ -11,5 +11,5 @@ comment4.params=hp
 comment4.target=void\ setHp(int)
 comment5.params=
 comment5.target=java.lang.String\ toString()
-comment5.text=\r\n\ \ \ \ public\ double\ calcGPA()\r\n\ \ \ \ {\r\n\ \ \ \ double\ gpaSum\ \=\ 0;\r\n\ \ \ \ double\ output;\r\n\ \ \ \ for\ (int\ i\ \=\ 0;\ i<grades.length;\ i++)\ \r\n\ \ \ \ {\r\n\ \ \ \ gpaSum+\=grades[i];\r\n\r\n\ \ \ \ }\ \r\n\r\n\ \ \ \ output\ \=\ gpaSum/5;\r\n\r\n\ \ \ \ return\ output;\r\n\ \ \ \ }\r\n\r\n
+comment5.text=\n\ \ \ \ public\ double\ calcGPA()\n\ \ \ \ {\n\ \ \ \ double\ gpaSum\ \=\ 0;\n\ \ \ \ double\ output;\n\ \ \ \ for\ (int\ i\ \=\ 0;\ i<grades.length;\ i++)\ \n\ \ \ \ {\n\ \ \ \ gpaSum+\=grades[i];\n\n\ \ \ \ }\ \n\n\ \ \ \ output\ \=\ gpaSum/5;\n\n\ \ \ \ return\ output;\n\ \ \ \ }\n\n
 numComments=6

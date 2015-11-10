@@ -7,6 +7,7 @@ public class CardsDriver {
         String rank;       
         String [] suitMode = { "Clubs" , "Spades", "Hearts", "Diamonds"};
         String [] rankMode = { "2", "3", "4" , "5" , "6", "7", "8" ,"9" , "10", "Jack", "Queen" , "King", "Ace"};
+        
         int suitNo;
         int rankNo;
         for ( int i = 0; i < myHand.length; i++ )
