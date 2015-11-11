@@ -1,19 +1,22 @@
 #BlueJ package file
+dependency1.from=CardDriver
+dependency1.to=SimpleCard
+dependency1.type=UsesDependency
 objectbench.height=76
 objectbench.width=686
 package.editor.height=400
 package.editor.width=560
-package.editor.x=30
-package.editor.y=30
-package.numDependencies=0
+package.editor.x=220
+package.editor.y=180
+package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
-target1.editor.x=436
-target1.editor.y=383
+target1.editor.x=515
+target1.editor.y=46
 target1.height=50
 target1.name=CardDriver
 target1.naviview.expanded=true

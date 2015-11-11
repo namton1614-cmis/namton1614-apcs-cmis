@@ -3,13 +3,13 @@ public class Hiro
 {
     private int hp;
     private String name;
-    public int lvl;
+    public int lvl =1;
     private int atk;
     public Hiro()
     {
         hp = 100;
-        lvl=1;
-        atk=7*lvl;
+        this.lvl=lvl;
+        atk=9*lvl;
         name = new String ("");
     } //end constructor 
     public int getAtk()

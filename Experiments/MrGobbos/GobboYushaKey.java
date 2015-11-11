@@ -79,7 +79,7 @@ public class GobboYushaKey {
                 double k = Math.random();
                 if ( response.equals("hit") || response.equals("punch") || response.equals("a") )
                 {
-                        System.out.println( hero.getAtk()+"\n" ); 
+                    System.out.println( hero.getAtk()+"\n" ); 
                     if (k<0.05)
                     { System.out.println(  hero.getAtk() ); 
                         goblife -= hero.getAtk()*3;
@@ -100,7 +100,7 @@ public class GobboYushaKey {
                 }   else if (response.equals ("potion") || response.equals ("heal") && potion>0)
                 {
                     System.out.println( "You drank a health potion!\n" ); 
-                    herolife +=30;
+                    herolife +=45;
                     potion--;
                     hero.setHp (herolife);
                     System.out.println ( hero);
@@ -110,8 +110,10 @@ public class GobboYushaKey {
                     if (potion == 0)
                     {
                         System.out.println ("No more potions. \n" );
+                    }else
+                    {
+                        System.out.println ("Command not recognized. \n" );
                     }
-                    System.out.println ("Command not recognized. \n" );
                 }
                 k = Math.random();
                 if (k>0.4)
