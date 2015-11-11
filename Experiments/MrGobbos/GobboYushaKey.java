@@ -11,6 +11,7 @@ public class GobboYushaKey {
         String heroName = input.nextLine();
         System.out.print("\nThese are your current stats.\n");
 
+        int potion =3;
         Hiro hero = new Hiro ();
         hero.setName (""+heroName);
         System.out.println ( hero);
@@ -26,26 +27,26 @@ public class GobboYushaKey {
             if ( response.equals("hit") || response.equals("punch") || response.equals("a") )
             {
                 double k = Math.random();
-                if (k<0.1)
-                { System.out.println( "Your attack crit!" ); 
+                if (k<0.05)
+                { System.out.println( "Your attack crit!\n" ); 
                     goblife -= hero.getAtk()*3;
                     gobA.setHp (goblife);
                     System.out.println ( gobA);
                 } else
                 if (k>0.3)
                 {
-                    System.out.println( "You hit the goblin!" ); 
-                    goblife -= hero.getAtk();
+                    System.out.println( "You hit the goblin!\n" ); 
+                    goblife -= hero.getAtk()+(int)(Math.random()*3);
                     gobA.setHp (goblife);
                     System.out.println ( gobA);
                 }else
                 {
-                    System.out.println ("Your attack misses. ");
+                    System.out.println ("Your attack misses. \n");
                 }
                 k = Math.random();
                 if (k>0.4)
                 {
-                    System.out.println( "The angry goblin hits back!" ); 
+                    System.out.println( "The angry goblin hits you!\n" ); 
                     int dmg =  (int)(Math.random()*10)+3;
                     herolife -=dmg;
                     hero.setHp (herolife);
@@ -53,7 +54,7 @@ public class GobboYushaKey {
 
                 }else{
 
-                    System.out.println ("The goblin misses. ");
+                    System.out.println ("The goblin misses. \n");
                 }
 
             }   else 
@@ -62,35 +63,83 @@ public class GobboYushaKey {
             }
 
         }
+
         if (goblife<=0)
         {
             System.out.println ("Angry goblin has been defeated! \n" );
+            hero.lvl=2;
+            MrGobbo gobB = new MrGobbo ("John the Joker", 12, 300);
+            goblife=gobB.getHp() ;
+            herolife=hero.getHp();
+            System.out.println ( gobB);
+            System.out.println("Another angry goblin has appeared! " +hero.lvl);
+            while ( goblife>0 && herolife>0)
+            {  System.out.println("\nWhat will you do?");
+                response = input.nextLine();
+                double k = Math.random();
+                if ( response.equals("hit") || response.equals("punch") || response.equals("a") )
+                {
+                        System.out.println( hero.getAtk()+"\n" ); 
+                    if (k<0.05)
+                    { System.out.println(  hero.getAtk() ); 
+                        goblife -= hero.getAtk()*3;
+                        gobB.setHp (goblife);
+                        System.out.println ( gobB);
+                    } else
+                    if (k>0.3)
+                    {
+                        System.out.println( "You hit the goblin!\n" ); 
+                        goblife -= hero.getAtk()+(int)(Math.random()*3);
+                        gobB.setHp (goblife);
+                        System.out.println ( gobB);
+                    }else
+                    {
+                        System.out.println ("Your attack misses. \n");
+                    }
+
+                }   else if (response.equals ("potion") || response.equals ("heal") && potion>0)
+                {
+                    System.out.println( "You drank a health potion!\n" ); 
+                    herolife +=30;
+                    potion--;
+                    hero.setHp (herolife);
+                    System.out.println ( hero);
+                }
+                else
+                {
+                    if (potion == 0)
+                    {
+                        System.out.println ("No more potions. \n" );
+                    }
+                    System.out.println ("Command not recognized. \n" );
+                }
+                k = Math.random();
+                if (k>0.4)
+                {
+                    System.out.println( "The angry goblin hits you!\n" ); 
+                    int dmg =  (int)(Math.random()*4)+6;
+                    herolife -=dmg;
+                    hero.setHp (herolife);
+                    System.out.println ( hero);
+
+                }
+                else{
+
+                    System.out.println ("The goblin misses. \n");
+                }
+
+            }
+
+            if (goblife<=0)
+            {
+                System.out.println ("Angry goblin has been defeated! \n" );
+            }
         }
         if (herolife<=0)
         {
             System.out.println ("You have has been defeated! \n" );
         }
-        /*
-        String input = JOptionPane.showInputDialog( "English" );
-        double english = Integer.parseInt ( input );
-        String input2 = JOptionPane.showInputDialog( "Math" );
-        double math = Integer.parseInt ( input2 );
-        String input3 = JOptionPane.showInputDialog( "Science" );
-        double science = Integer.parseInt ( input3 );        
-        String input4 = JOptionPane.showInputDialog( "Fine Arts" );
-        double art = Integer.parseInt ( input4 );
-        String input5 = JOptionPane.showInputDialog( "Social Science" );
-        double social = Integer.parseInt ( input5 );
-        // setting various gpa of various classes
-        double grades []= { english, math, science, art, social};
-        // stored in array
-        junior001.setGPA( grades);
-        // change gpa with setter method
-        System.out.println ( junior001);
 
-        MrGobbo gobB = new MrGobbo ("John the Joker", 12, 80);
-        System.out.println ( gobB);
-         */
     }
 } //end class StudentDriver
 

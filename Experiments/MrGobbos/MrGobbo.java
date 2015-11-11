@@ -30,31 +30,13 @@ public class MrGobbo
         return output;
     }
 
-    /*
-    public double calcGPA()
-    {
-    double gpaSum = 0;
-    double output;
-    for (int i = 0; i<grades.length; i++) 
-    {
-    gpaSum+=grades[i];
-
-    } 
-
-    output = gpaSum/5;
-
-    return output;
-    }
-
-     */
     public String toString()
     {
         String output = String.format( 
                 "Enemy:  %s\n"
-                + "HP: %d\n"
-                + "Level: %d",
+                + "HP: %d\n",
 
-                name, hp ,lvl);
+                name, hp );
         return output; 
     }
 }
