@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Ballista()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Ballista\n
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ballista\r\n
 comment1.params=power
 comment1.target=void\ setPower(int)
 comment2.params=angle
@@ -10,4 +10,6 @@ comment3.params=
 comment3.target=int\ getAngle()
 comment4.params=
 comment4.target=int\ getPower()
-numComments=5
+comment5.params=
+comment5.target=int\ getProjectileDistance()
+numComments=6

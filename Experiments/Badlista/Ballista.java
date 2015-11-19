@@ -32,4 +32,21 @@ public class Ballista
     {
         return power;
     }
+
+    public int getProjectileDistance()
+    {
+        int angValue=0;
+
+        if (angle <=45)
+        {
+            angValue =angle;
+
+        }
+        if (angle >45)
+        {
+            angValue = 90-angle;
+
+        }
+        return angValue*power;
+    }
 }

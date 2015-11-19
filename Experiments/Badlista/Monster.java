@@ -18,7 +18,7 @@ public class Monster
     public String toString()
     {
         String output = String.format(
-                "Deadders at %s\n" ,
+                "The monster lies dead at %s meters.\n" ,
                 location )
         ;
         return output;
