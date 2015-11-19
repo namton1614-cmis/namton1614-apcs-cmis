@@ -6,6 +6,7 @@ public class Shape {
 
     enum Tetrominoes { NoShape, ZShape, SShape, LineShape, 
                TShape, SquareShape, LShape, MirroredLShape };
+               
 
     public Tetrominoes pieceShape;
     public int coords[][];
