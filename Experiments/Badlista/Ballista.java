@@ -1,8 +1,8 @@
 
 public class Ballista
 {
-    private int angle;
-    private int power;
+    private double angle;
+    private double power;
 
     /**
      * Constructor for objects of class Ballista
@@ -13,29 +13,29 @@ public class Ballista
         power=0;
     }
 
-    public void setPower(int power)
+    public void setPower(double power)
     {
         this.power=power;
     }
 
-    public void setAngle(int angle)
+    public void setAngle(double angle)
     {
         this.angle=angle;
     }
 
-    public int getAngle()
+    public double getAngle()
     {
         return angle;
     }
 
-    public int getPower()
+    public double getPower()
     {
         return power;
     }
 
-    public int getProjectileDistance()
+    public double getProjectileDistance()
     {
-        int angValue=0;
+        double angValue=0;
 
         if (angle <=45)
         {

@@ -7,9 +7,9 @@ public class BallistoControl
 
     public static void main (String lololol [])
     {
-        int monster =0;
-        int projectile =0;
-        int missDistance=0;
+        double monster =0;
+        double projectile =0;
+        double missDistance=0;
         Scanner input = new Scanner(System.in);
         Monster MonA = new Monster ();
 
@@ -19,16 +19,16 @@ public class BallistoControl
         monster= MonA.getLocation();
 
         System.out.println("\nSet your angle");
-        M.setAngle( Integer.parseInt(input.nextLine()));
+        M.setAngle( Double.parseDouble(input.nextLine()));
         System.out.println("\nSet your power");
-        M.setPower( Integer.parseInt(input.nextLine()));
+        M.setPower( Double.parseDouble(input.nextLine()));
         projectile=M.getProjectileDistance();
         while (monster != projectile)
         {
             missDistance=Math.abs(monster-projectile);
             System.out.println("\nYou missed!" + 
             "\nThe monster is still at " + MonA.getLocation()+ " meters." +
-            "\nYou were " + missDistance + " meters off target."); 
+            "\nYou were " + "%f.2"  + " meters off target." , missDistance); 
 
             System.out.println("\nSet your angle");
             M.setAngle( Integer.parseInt(input.nextLine()));

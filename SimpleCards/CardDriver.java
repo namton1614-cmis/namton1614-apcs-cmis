@@ -11,23 +11,7 @@ public class CardDriver {
         SimpleCard[] deckP = new SimpleCard [52];
         int counter =0;
 
-        for ( int i = 0; i < suitMode.length; i++ )
-        {
-            suit = suitMode [i];
-            for (int  u = 0; u < rankMode.length; u++ )
-            {
-                rank = rankMode [u];
-                deck = new SimpleCard (  suit, rank);
-                stater [counter] = ""+deck;
-                counter +=1;
-            } //end for
-        } //end for
-
-        for ( int i = 0; i < 5; i++ )
-        {
-            int random= (int)(Math.random()*52);
-            System.out.println( stater [random]);
-        } //end for
+   
 
         for (int i=0; i < deckP.length; i++)
         {
