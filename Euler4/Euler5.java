@@ -14,7 +14,7 @@ public class Euler5
         int big =0;
         while (genos !=0)
         {
-            big+=20;
+            big+=2520;
             genos =0;
             for (int i =1;i<=20;i++)
             {
