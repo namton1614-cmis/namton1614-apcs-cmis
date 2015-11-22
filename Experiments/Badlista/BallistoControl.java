@@ -5,7 +5,7 @@ public class BallistoControl
 {
     public Ballista M = new Ballista ();
 
-    public static void main (String lololol [])
+    public static void main (String arvgs [])
     {
         double monster =0;
         double projectile =0;
@@ -26,15 +26,15 @@ public class BallistoControl
         while (monster != projectile)
         {
             missDistance=Math.abs(monster-projectile);
-            System.out.println("\nYou missed!" + 
-            "\nThe monster is still at " + MonA.getLocation()+ " meters." +
-            "\nYou were " + "%f.2"  + " meters off target." , missDistance); 
+            System.out.println("\nYou missed!" + "\nYou were " +missDistance+ " meters off targer!"+
+            "\nThe monster is still at " + MonA.getLocation()+ " meters." );
+
 
             System.out.println("\nSet your angle");
-            M.setAngle( Integer.parseInt(input.nextLine()));
+            M.setAngle( Double.parseDouble(input.nextLine()));
 
             System.out.println("\nSet your power");
-            M.setPower( Integer.parseInt(input.nextLine()));
+            M.setPower( Double.parseDouble(input.nextLine()));
             projectile=M.getProjectileDistance();
 
         }
