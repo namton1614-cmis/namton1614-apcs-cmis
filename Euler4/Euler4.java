@@ -1,7 +1,7 @@
 
 public class Euler4
 {
-    
+
     public static void main (String arms [])
     {
         for ( int a=100;a <999;a++)
@@ -12,7 +12,13 @@ public class Euler4
                 String AB= ""+ab; 
                 if (ab>100000)
                 {
-                    if (AB.substring(0,2).equals(AB.substring(4,6)))
+                    String backwardsAB="";
+                    for (int i=2; i>=0; i--)
+                    { String singleInt = AB.substring(AB.length()-1);
+                         backwardsAB += singleInt;
+                    }
+                        System.out.println(backwardsAB);
+                    if (AB.substring(0,1).equals(backwardsAB))
                     {
                         System.out.println(a*b);
                     }
