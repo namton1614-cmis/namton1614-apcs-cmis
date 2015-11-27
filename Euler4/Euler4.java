@@ -13,12 +13,13 @@ public class Euler4
                 if (ab>100000)
                 {
                     String backwardsAB="";
-                    for (int i=2; i>=0; i--)
-                    { String singleInt = AB.substring(AB.length()-1);
-                         backwardsAB += singleInt;
+                    for (int i=1; i<4; i++)
+                    {  int calc = AB.length()+1-i;
+                        String singleInt = AB.substring(AB.length()-i,calc);
+                        backwardsAB += singleInt;
                     }
-                        System.out.println(backwardsAB);
-                    if (AB.substring(0,1).equals(backwardsAB))
+
+                    if (AB.substring(0,3).equals(backwardsAB))
                     {
                         System.out.println(a*b);
                     }
