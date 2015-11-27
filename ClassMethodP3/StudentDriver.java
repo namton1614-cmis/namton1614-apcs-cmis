@@ -8,15 +8,15 @@ public class StudentDriver {
         System.out.println ( junior001);
 
         String input = JOptionPane.showInputDialog( "English" );
-        double english = Integer.parseInt ( input );
+        double english = Double.parseDouble ( input );
         String input2 = JOptionPane.showInputDialog( "Math" );
-        double math = Integer.parseInt ( input2 );
+        double math = Double.parseDouble( input2 );
         String input3 = JOptionPane.showInputDialog( "Science" );
-        double science = Integer.parseInt ( input3 );        
+        double science = Double.parseDouble ( input3 );        
         String input4 = JOptionPane.showInputDialog( "Fine Arts" );
-        double art = Integer.parseInt ( input4 );
+        double art = Double.parseDouble ( input4 );
         String input5 = JOptionPane.showInputDialog( "Social Science" );
-        double social = Integer.parseInt ( input5 );
+        double social = Double.parseDouble ( input5 );
         // setting various gpa of various classes
         double grades []= { english, math, science, art, social};
         // stored in array
