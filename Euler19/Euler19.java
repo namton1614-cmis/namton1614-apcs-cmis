@@ -6,12 +6,12 @@ public class Euler19
         int year=1901;
         int tDay =0;
         int sundays =0;
-        while (year!=2000)
+        while (year<=2000)
         {
             int month =1;
             while(month<=12)
             {
-                int day =1;
+                int day =0;
                 int monthL=31;
                 if (month == 2)
                 {
@@ -30,27 +30,24 @@ public class Euler19
                 {
                     monthL=30;
                 } 
-
                 while(day<monthL)
                 {
                     tDay++;
-                    int monday = tDay&7;
-                    if (monday==0 && day==1)
+                    day++;
+                    int monday = (tDay%7);
+                    if (monday==6 && day==1)
                     {
                         sundays++;
 
                     }
-                    day++;
 
-           
+                    System.out.println(year + "\t"+ month +"\t" + day + "\t"+sundays +"\t"+monday);
+
                 }
-                System.out.println(year + "\t"+ month +"\t" + day + "\t"+sundays);
                 month++;
             }
             year++;
-
         }
-        System.out.println(tDay);
     }
 }
 
