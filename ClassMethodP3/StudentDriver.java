@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class StudentDriver {
+public class StudentDriver extends Student {
     public static void main (String argvs [] )
     {
         Student senior001 = new Student ();

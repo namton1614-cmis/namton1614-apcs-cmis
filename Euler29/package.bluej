@@ -1,3 +1,33 @@
 #BlueJ package file
-#Wed Dec 09 11:32:24 ICT 2015
+objectbench.height=76
+objectbench.width=658
+package.editor.height=400
+package.editor.width=560
+package.editor.x=274
+package.editor.y=284
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
 project.charset=UTF-8
+target1.height=50
+target1.name=Euler29
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=90
+target1.y=10
+target2.editor.height=700
+target2.editor.width=900
+target2.editor.x=232
+target2.editor.y=400
+target2.height=50
+target2.name=Solution
+target2.naviview.expanded=true
+target2.showInterface=false
+target2.type=ClassTarget
+target2.typeParameters=
+target2.width=80
+target2.x=180
+target2.y=10
