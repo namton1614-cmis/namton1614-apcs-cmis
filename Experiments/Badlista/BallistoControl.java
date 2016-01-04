@@ -31,7 +31,8 @@ public class BallistoControl
 
 
             System.out.println("\nSet your angle");
-            M.setAngle( Double.parseDouble(input.nextLine()));
+423
+
 
             System.out.println("\nSet your power");
 

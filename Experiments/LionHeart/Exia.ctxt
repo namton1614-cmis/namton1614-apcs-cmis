@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Exia()
+comment1.params=
+comment1.target=void\ TRANSAM()
+comment2.params=
+comment2.target=void\ powerDrive()
+comment3.params=
+comment3.target=java.lang.String\ activateTRANSAM()
+comment4.params=
+comment4.target=java.lang.String\ checkTransam()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
