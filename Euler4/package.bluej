@@ -1,10 +1,10 @@
 #BlueJ package file
 objectbench.height=76
-objectbench.width=686
+objectbench.width=714
 package.editor.height=400
 package.editor.width=588
-package.editor.x=498
-package.editor.y=72
+package.editor.x=422
+package.editor.y=309
 package.numDependencies=0
 package.numTargets=2
 package.showExtends=true
@@ -23,8 +23,13 @@ target1.typeParameters=
 target1.width=80
 target1.x=10
 target1.y=80
+target2.editor.height=700
+target2.editor.width=900
+target2.editor.x=462
+target2.editor.y=175
 target2.height=50
 target2.name=Euler5
+target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
