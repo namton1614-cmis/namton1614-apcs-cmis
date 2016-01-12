@@ -21,22 +21,22 @@ public class Euler50
                     primeCheck=0;
                 }
             }
+
             if (primeCheck==1)
             {
                 primeSum+=prime;
                 System.out.println(prime);
-
                 primeCheck2=1;	
-                for(int i = 3; i * i <= prime; i += 2)
+                for(int i = 3; i * i <= primeSum; i += 2)
                 { 
-                    if (prime % i == 0) 
+                    if (primeSum % i == 0) 
                     {
                         primeCheck2=0;
                     }
                 }
 
             }
-            if (primeCheck2==1)
+            if (primeCheck2==1 && (primePrimeSum <primeSum))
             {
                 primePrimeSum=primeSum;
             }
