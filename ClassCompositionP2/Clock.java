@@ -47,7 +47,7 @@ public class Clock
     public String toString( )
     {
         String output = new String();
-        output =  "The time is " + hour + ":" +  minute + ":" + second + "\nTotal seconds is " +  totalSeconds() ;
+        output =  "The time is " + hour + ":" +  minute + ":" + second + "\nTotal seconds is " +  totalSeconds()+"\n" ;
         return output;
     }
 }

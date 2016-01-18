@@ -25,7 +25,7 @@ public class Euler50
             if (primeCheck==1)
             {
                 primeSum+=prime;
-                System.out.println(prime);
+                System.out.println(prime +" "+ primeSum +" "+ primePrimeSum);
                 primeCheck2=1;	
                 for(int i = 3; i * i <= primeSum; i += 2)
                 { 
