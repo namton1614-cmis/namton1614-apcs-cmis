@@ -8,24 +8,31 @@ public class MyPod
     {
         memory =4;
         color = new String ("Green");
-        String[] songName = {"Jack", "Mann","Azerbaijan"};
-
-    } //end constructor Song
+         songName =  new String[]{"Jack, ", "Mann, ","Azerbaijan"};
+    } //end constructor  
+   
     public MyPod( int memory, String color, String[] songName)
     {
         this.memory =memory;
         this.color = color;
         this.songName = songName;
 
-    } //end constructor Song
+    } //end constructor  
 
     public String toString()
     {
+              String song ="";
+         for (String x: songName)
+        {
+               song += x;
+        }
         return String.format(  
-            "Memory: %i\n" +
-            "Color:%d\n" + 
-            "Songs?: %d\n" +
+            "Memory: %d\n" +
+            "Color: %s\n" +
+            "Song: %s\n" 
+            ,
+     
+        memory,color,song );
 
-            memory,color,songName );
     }
 }
