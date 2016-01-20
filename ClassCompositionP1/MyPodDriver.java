@@ -6,7 +6,10 @@ public class MyPodDriver {
         String[] rolo =  new String[]{"Power, ", "Xeno, ","Hero"};
         MyPod pod2 = new MyPod (5,"Red", rolo);
         System.out.println (   pod);
-        System.out.println (   pod2);
+        System.out.println (   pod2 +"\n\n\n\n");
+        
+        MyPod2 vika = new MyPod2 ();
+                System.out.println (   vika);
 
     }
 } //end class MyPhoneDriver

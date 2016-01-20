@@ -7,10 +7,14 @@ public class Family     {
         myFamily.add("Rojana Thammajinda");
         myFamily.add("Tayart Thammajinda");
 
-        System.out.println(myFamily.size());
+        System.out.println("Number of family members "+myFamily.size() +"\nFamily members:");
         for (String x : myFamily)
         {
             System.out.println (x);
+        }
+        for (int i =0;i < myFamily.size(); i++)
+        {
+                    System.out.println (myFamily.get(i));
         }
     }
 } //end class StudentDriver
