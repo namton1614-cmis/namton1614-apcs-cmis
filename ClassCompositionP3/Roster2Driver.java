@@ -11,7 +11,7 @@ public class Roster2Driver     {
         apComputerScience.addStudent(b);
         apComputerScience.addStudent(c);
         System.out.println ( "ADD STUDENTS CLASS\n" +apComputerScience);
-                apComputerScience.dropStudent("Ryun ");
+        apComputerScience.dropStudent("Ryun ");
         System.out.println ( "DROP STUDENTS CLASS\n" +apComputerScience);
     }
 } //end class StudentDriver

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Trail()
+comment1.params=markers
+comment1.target=Trail(java.util.ArrayList)
+comment2.params=marker
+comment2.target=void\ addMarker(int)
+comment3.params=
+comment3.target=int\ getLength()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
