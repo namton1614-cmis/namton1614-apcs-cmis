@@ -1,13 +1,14 @@
 import java.util.ArrayList;
 public class Trail     {
     ArrayList<Integer> markers = new ArrayList<Integer>(); 
+    int netElevation=0;
     public Trail( )
     {
 
         for (int i=0; i<13;i++)
         {
 
-            markers.add( (int)(Math.random()*30)+50 );
+            markers.add( (int)(Math.random()*70)+50 );
 
         }
 
@@ -35,9 +36,10 @@ public class Trail     {
 
     public boolean isLevelTrailSegment( int begin, int end )
     {
-        boolean check = true;
+        boolean check = false;
         if (markers.get(begin)==markers.get(end))
         {
+            check=true;
             for (int i=0;i<markers.size();i++)
             {
                 if (i>0&&Math.abs(markers.get(i)-markers.get(i-1))>10)
@@ -57,24 +59,27 @@ public class Trail     {
 
     public boolean isDifficult(int begin, int end)
     {
-        int netElevation=0;
-        if (!isLevelTrailSegment(begin, end))
+        for (int i=0;i<markers.size();i++)
         {
-            for (int i=0;i<markers.size();i++)
+
+            if (i>0&& (markers.get(i)-markers.get(i-1))>0)
             {
-                if (i>0|| markers.get(i)-markers.get(i-1)<0)
-                {
-                    int subtraction=Math.abs(markers.get(i)-markers.get(i+1));
-                    netElevation+=subtraction;
-
-                }
+                int subtraction=(markers.get(i)-markers.get(i-1));
+                netElevation+=subtraction;
+                System.out.println(netElevation);
             }
-
-        } 
-        if (netElevation>100)
-        {
-            return true;
         }
+        if (!isLevelTrailSegment(begin, end) )
+        {
+            if (netElevation>100)
+            {
+                return true;
+            }        
+            else 
+
+                return false;
+        } 
+
         else 
 
             return false;
@@ -89,9 +94,10 @@ public class Trail     {
         {   i++;
             output += i+"\t"+x+"\n";
         }
-        output += "Total Distance of Trail is :"+getLength()+"\n";
-        output += "Trail Level: " +  isLevelTrailSegment( 0,markers.size()-1);
-        output += "Trail Difficult: " +         isDifficult(0,markers.size()-1);
+        output += "Total Distance of Trail is : "+getLength()+"\n";
+        output += "Net Elevation : "+netElevation+"\n";
+        output += "Trail Level: " +  isLevelTrailSegment( 0,markers.size()-1)+"\n";
+        output += "Trail Difficult: " +         isDifficult(0,markers.size()-1)+"\n";
         return output;
     }
 }

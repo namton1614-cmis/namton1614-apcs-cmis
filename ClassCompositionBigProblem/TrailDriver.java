@@ -5,11 +5,11 @@ public class TrailDriver     {
         ArrayList<Integer> neon = new ArrayList<Integer>(); 
         neon.add( 60 );
         neon.add( 55 );
-        neon.add( 60 );
+        neon.add( 50 );
         neon.add( 55 );                    
+        neon.add( 65 );
         neon.add( 60 );
-        neon.add( 60 );
-        neon.add( 60 );
+        neon.add( 65 );
         neon.add( 60 );   
 
         Trail Fuji = new Trail ();
@@ -19,7 +19,7 @@ public class TrailDriver     {
         Cook.addMarker(60);
         Cook.addMarker(50);
         Cook.addMarker(60);
-        Cook.addMarker(60);
+        Cook.addMarker(65);
         Cook.addMarker(60);
         System.out.println ("\nFuji\n"+ Fuji +"\nCook\n"+ Cook +"\nEverest\n"+ Everest);
 
