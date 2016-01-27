@@ -35,11 +35,10 @@ public class Student
         return output ;
 
     }
-       public String getLastName()
-    {
- 
- return lastname ;
 
+    public String getLastName()
+    {
+        return lastname ;
     }
 
     public void setGPA(double [] grades )
