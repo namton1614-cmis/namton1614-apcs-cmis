@@ -4,14 +4,10 @@ public class Trail     {
     int netElevation=0;
     public Trail( )
     {
-
         for (int i=0; i<13;i++)
         {
-
             markers.add( (int)(Math.random()*70)+50 );
-
         }
-
     } 
 
     public Trail(ArrayList<Integer> markers )
@@ -45,7 +41,6 @@ public class Trail     {
                 if (i>0&&Math.abs(markers.get(i)-markers.get(i-1))>10)
                 {
                     check=false;
-
                 }
             }
         }
@@ -61,27 +56,17 @@ public class Trail     {
     {
         for (int i=0;i<markers.size();i++)
         {
-
             if (i>0&& (markers.get(i)-markers.get(i-1))>0)
             {
-                int subtraction=(markers.get(i)-markers.get(i-1));
-                netElevation+=subtraction;
-                System.out.println(netElevation);
+                netElevation+=(markers.get(i)-markers.get(i-1));
             }
         }
-        if (!isLevelTrailSegment(begin, end) )
+        if (!isLevelTrailSegment(begin, end) && netElevation>100)
         {
-            if (netElevation>100)
-            {
-                return true;
-            }        
-            else 
-
-                return false;
+            return true;
         } 
 
         else 
-
             return false;
 
     }
@@ -95,9 +80,9 @@ public class Trail     {
             output += i+"\t"+x+"\n";
         }
         output += "Total Distance of Trail is : "+getLength()+"\n";
-        output += "Net Elevation : "+netElevation+"\n";
         output += "Trail Level: " +  isLevelTrailSegment( 0,markers.size()-1)+"\n";
         output += "Trail Difficult: " +         isDifficult(0,markers.size()-1)+"\n";
+        output += "Net Elevation : "+netElevation+"\n";
         return output;
     }
 }
