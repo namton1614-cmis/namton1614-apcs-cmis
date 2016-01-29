@@ -16,10 +16,14 @@ public class MrMultiply     {
         {
             for (int c=0;c<grix[0].length;c++)
             {
-                if (c==0 || r==0)
+                if (r==0)
                 {
                     grix[r][c]= c; 
+                } else if (c==0)
+                {
+                    grix[r][c]= r; 
                 }
+
                 else
 
                     grix[r][c]= r*c;
@@ -29,10 +33,8 @@ public class MrMultiply     {
 
         for (int [] rowx: grix)
         {
-
             for (int num: rowx)
             {
-
                 System.out.print(num + "\t");
             }
             System.out.println("\n");

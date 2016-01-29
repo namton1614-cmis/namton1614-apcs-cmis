@@ -62,10 +62,8 @@ public class Trail     {
             }
         }
         if (!isLevelTrailSegment(begin, end) && netElevation>100)
-        {
             return true;
-        } 
-
+        
         else 
             return false;
 
