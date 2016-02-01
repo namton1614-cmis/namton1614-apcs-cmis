@@ -36,7 +36,7 @@ public class Trail     {
         if (markers.get(begin)==markers.get(end))
         {
             check=true;
-            for (int i=0;i<markers.size();i++)
+            for (int i=begin;i<end;i++)
             {
                 if (i>0&&Math.abs(markers.get(i)-markers.get(i-1))>10)
                 {
@@ -54,7 +54,8 @@ public class Trail     {
 
     public boolean isDifficult(int begin, int end)
     {
-        for (int i=0;i<markers.size();i++)
+        netElevation=0;
+        for (int i=begin;i<end;i++)
         {
             if (i>0&& (markers.get(i)-markers.get(i-1))>0)
             {

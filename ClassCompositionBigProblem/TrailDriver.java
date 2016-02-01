@@ -23,5 +23,8 @@ public class TrailDriver     {
         Cook.addMarker(60);
         System.out.println ("\nFuji\n"+ Fuji +"\nCook\n"+ Cook +"\nEverest\n"+ Everest);
 
+        System.out.println ("Everest point 5 to 5 \n Trail Level: " +  Everest.isLevelTrailSegment( 4,4)+"\n");  
+        System.out.println("Everest point 5 to 7 \nTrail Difficult: " +  Everest.isDifficult(0,5)+"\n");
+
     }
 } //end class  
