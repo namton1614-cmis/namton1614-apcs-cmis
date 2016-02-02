@@ -47,7 +47,10 @@ public class Jukebox
         {
             for (MySong letter: rowx)
             {
-                output +=  "\n"+letter+"\n";
+                if (letter.getRating()==rating)
+                {                
+                    output +=  "\n"+letter+"\n";
+                }
             }
         }
         return output;

@@ -14,7 +14,12 @@ public class MySong
         this.rating = rating;
 
     }
-    public String getName()
+    public int getRating()
+    {
+       return rating; 
+    
+    }
+        public String getName()
     {
        return name; 
     

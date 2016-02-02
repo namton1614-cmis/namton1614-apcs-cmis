@@ -13,6 +13,8 @@ public class JukeboxDrive     {
         Jukebox koni = new Jukebox();
         System.out.println (koni);
                 System.out.println ("The jukebox is now playing: " +koni.randomSong());
+                
+                System.out.println("Songs with rating 5: \n"+koni.ratingSong(5));
 
     }
 } //end class  
