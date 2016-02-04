@@ -22,7 +22,6 @@ public class Alphabet     {
         {
             for (int c=0;c<grix[0].length;c++)
             {
-
                 if (counter==25|| type==3&&counter==10)
                 {
                     counter=0;
