@@ -21,14 +21,13 @@ public class PasswordShapedMachine
         while ( password.length()<6 || freeCompare !=1)
         {
             freeCompare =0;            
-
             System.out.println("\nCreate a password!");
             password = input.nextLine();
             String passwordLC = password.toLowerCase();
-            ArrayList<String> passArray = new ArrayList<String>(); 
-            for (int i =0; i < passArray.size(); i++)
+            for (int i =0; i < passwordLC.length(); i++)
             {
-                String lerin =password.substring(i,i+1);
+                String lerin =passwordLC.substring(i,i+1);
+                System.out.println(  lerin); 
                 if (lerin.equals("*") 
                 || lerin.equals("+") 
                 ||lerin.equals("-") 
@@ -41,17 +40,17 @@ public class PasswordShapedMachine
             int nameCheck=passwordLC.indexOf(lastNameLC);
             System.out.println(  password.length() +":"+freeCompare+":"+nameCheck); 
             if ( password.length()>=6 && freeCompare ==1 &&nameCheck<0)
-            {
+
                 System.out.println( "Password has been accepted." ); 
-            }
+
             else if (nameCheck>=0)
-            {
+
                 System.out.println ("Password requirements not met.\nRemove your last name.\nTry again. \n" );
-            }
+
             else 
-            {
+
                 System.out.println ("Password requirements not met.\nTry again. \n" );
-            }
+
         }// end main
     }// end class PasswordMachinaFactoryP9
 }
