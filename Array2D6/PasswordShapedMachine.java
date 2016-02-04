@@ -12,12 +12,7 @@ public class PasswordShapedMachine
         String lastNameLC = lastname.toLowerCase();
 
         int freeCompare =0;
-        ArrayList<String> lnArray = new ArrayList<String>(); 
-        for (int i =0; i < lastNameLC.length(); i++)
-        {
-            String genox =lastNameLC.substring(i,i+1);
-            lnArray.add(genox);
-        }
+ 
         while ( password.length()<6 || freeCompare !=1)
         {
             freeCompare =0;            
@@ -27,7 +22,6 @@ public class PasswordShapedMachine
             for (int i =0; i < passwordLC.length(); i++)
             {
                 String lerin =passwordLC.substring(i,i+1);
-                System.out.println(  lerin); 
                 if (lerin.equals("*") 
                 || lerin.equals("+") 
                 ||lerin.equals("-") 
@@ -38,7 +32,6 @@ public class PasswordShapedMachine
                 }
             }
             int nameCheck=passwordLC.indexOf(lastNameLC);
-            System.out.println(  password.length() +":"+freeCompare+":"+nameCheck); 
             if ( password.length()>=6 && freeCompare ==1 &&nameCheck<0)
 
                 System.out.println( "Password has been accepted." ); 

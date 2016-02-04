@@ -10,22 +10,26 @@ public class GameDriver     {
         int col = input.nextInt();
 
         Game MrZ = new Game (row, col);
-        System.out.println(MrZ);
-        MrZ.RandomZero();
 
+        MrZ.RandomZero();
+        System.out.println(MrZ);
         System.out.println("\nGuess the row!");
         int gRow = input.nextInt();
         System.out.println("\nGuess the column!");
         int gCol = input.nextInt();
-        
+
         while (!MrZ.guess(gRow,gCol))
         {
+            System.out.println("\f");
+            System.out.println(MrZ);
+            System.out.println(MrZ.OffBy());
             System.out.println("\nGuess the row!");
-             gRow = input.nextInt();
+            gRow = input.nextInt();
             System.out.println("\nGuess the column!");
-             gCol = input.nextInt();
+            gCol = input.nextInt();
+            MrZ.guess(gRow,gCol);
         }
-        
-            System.out.println("Sucess!");
+
+        System.out.println("Sucess!");
     }
 } //end class  
