@@ -28,7 +28,7 @@ public class Game
         {
             for (int c=0;c<gameBoard[0].length;c++)
             {
-                gameBoard[r][c]=(int)(Math.random()*100);
+                gameBoard[r][c]=(int)(Math.random()*100)+1;
             }
         }
     }
@@ -37,7 +37,7 @@ public class Game
     {
         int rowDiff = Math.abs(zRow-gRow);
         int colDiff = Math.abs(zCol-gCol);
-        String output  ="Your row is off by:" +rowDiff+ "\nYour column guess" + colDiff;
+        String output  ="Your row is off by: " +rowDiff+ "\nYour column is off by: " + colDiff;
         return output;
     }
 
@@ -69,7 +69,7 @@ public class Game
             for (int VKZ:RKZ)
             {
                 if (VKZ<100)
-                    output+= "X\t";
+                    output+= VKZ+"\t";
                 else if (VKZ>100)
                     output+="N\t";
             }

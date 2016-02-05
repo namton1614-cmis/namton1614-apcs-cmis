@@ -39,5 +39,6 @@ public class MrMultiply     {
             }
             System.out.println("\n");
         }
+            System.out.println(grix.length);
     }
 } //end class  

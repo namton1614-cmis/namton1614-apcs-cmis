@@ -18,9 +18,8 @@ public class GameDriver     {
         System.out.println("\nGuess the column!");
         int gCol = input.nextInt();
 
-        while (!MrZ.guess(gRow,gCol))
+        while (MrZ.guess(gRow,gCol)==false)
         {
-            System.out.println("\f");
             System.out.println(MrZ);
             System.out.println(MrZ.OffBy());
             System.out.println("\nGuess the row!");
