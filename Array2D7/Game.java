@@ -33,32 +33,30 @@ public class Game
         }
     }
 
+    public void RandomZero ()
+    {
+        zRow=(int)(Math.random()*row);
+        zCol=(int)(Math.random()*col);
+        gameBoard[zRow][zCol]=0;
+    }
+
+    public boolean guess( int gRow, int gCol)
+    {
+        gameBoard[gRow][gCol]= 500 ;
+        this.gCol=gCol;
+        this.gRow=gRow;
+        if (gRow==zRow&&gCol==zCol)
+            return true;
+        else
+            return false;
+    }
+
     public String OffBy()
     {
         int rowDiff = Math.abs(zRow-gRow);
         int colDiff = Math.abs(zCol-gCol);
         String output  ="Your row is off by: " +rowDiff+ "\nYour column is off by: " + colDiff;
         return output;
-    }
-
-    public void RandomZero ()
-    {
-        zRow=(int)(Math.random()*row);
-        zCol=(int)(Math.random()*col);
-        gameBoard[zRow][zCol]=0;
-        System.out.println(zRow);
-        System.out.println(zCol);
-    }
-
-    public boolean guess( int gRow, int gCol)
-    {
-        gameBoard[gRow-1][gCol-1]= 500 ;
-        gCol=this.gCol;
-        gRow=this.gRow;
-        if (gRow-1==zRow&&gCol-1==zCol)
-            return true;
-        else
-            return false;
     }
 
     public String toString( )
@@ -69,7 +67,7 @@ public class Game
             for (int VKZ:RKZ)
             {
                 if (VKZ<100)
-                    output+= VKZ+"\t";
+                    output+= "X\t";
                 else if (VKZ>100)
                     output+="N\t";
             }

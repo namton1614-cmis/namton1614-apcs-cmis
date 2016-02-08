@@ -15,9 +15,16 @@ public class Test     {
                 {5, 6, 9, 9, 7, 8, 7, 3, 9, 3},
                 {1, 0, 4, 8, 3, 1, 0, 2, 1, 5},
                 {1, 7, 3, 6, 3, 7, 8, 3, 3, 6}};
-
-        int []colSum= new int [grid[0].length];
-        int []rowSum= new int [grid.length];
+        int []colProduct= new int [grid[0].length];
+        int []rowProduct= new int [grid.length];
+        for (int i=0;i<colProduct.length;i++)
+        {
+            colProduct[i]=1;
+        }
+        for (int i=0;i<rowProduct.length;i++)
+        {
+            rowProduct[i]=1;
+        }
         int bigCol=0;
         int bigRow=0;
         int rowFind=0;
@@ -27,29 +34,37 @@ public class Test     {
         {
             for (int r=0;r<grid.length;r++)
             {
-                colSum[c]+=grid[r][c];
+                if (grid[r][c]==0)
+                {
+                    colProduct[c]*=1;
+                } else
+                    colProduct[c]*=grid[r][c];
             }
         }
         for (int r =0;r<grid.length;r++)
         {
             for (int c=0;c<grid[0].length;c++)
             {
-                rowSum[r]+= grid[r][c];
+                if (grid[r][c]==0)
+                {
+                    rowProduct[c]*=1;
+                } else
+                    rowProduct[r]*= grid[r][c];
             }
         }
-        for (int i=0;i<colSum.length;i++)
+        for (int i=0;i<colProduct.length;i++)
         {
-            if (bigCol<colSum[i])
+            if (bigCol<colProduct[i])
             {
-                bigCol=colSum[i];
+                bigCol=colProduct[i];
                 colFind=i;
             }
         }
-               for (int i=0;i<rowSum.length;i++)
+        for (int i=0;i<rowProduct.length;i++)
         {
-            if (bigRow<rowSum[i])
+            if (bigRow<rowProduct[i])
             {
-                bigRow=rowSum[i];
+                bigRow=rowProduct[i];
                 rowFind=i;
             }
         }
