@@ -2,9 +2,9 @@
 dependency1.from=ExiaDriver
 dependency1.to=Exia
 dependency1.type=UsesDependency
-objectbench.height=79
-objectbench.width=658
-package.editor.height=397
+objectbench.height=76
+objectbench.width=686
+package.editor.height=400
 package.editor.width=560
 package.editor.x=254
 package.editor.y=264
