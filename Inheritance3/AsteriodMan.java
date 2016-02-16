@@ -1,21 +1,21 @@
 
 public class AsteriodMan extends SuperHero
 { 
-    private String capeColor;
     public AsteriodMan()
     {
-      capeColor="Grey";
+        setSuitColor("Grey");
+        setCape(true);
     } // end zero-arg constructor SuperHero
-    
+
     public String motto()   
     {
-        return "Rock Solid";
+        return "Eat the translation jelly!";
     }
 
     public String toString()
     {
         String output = new String();
-        output =  getSuitColor() +"\t" + isCaped();
+        output ="AsteroidMan\t"+  getSuitColor() +"\t" + isCaped() + "\t"+motto();
         return output;
     } // end method toString
 }

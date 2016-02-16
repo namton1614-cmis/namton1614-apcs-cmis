@@ -1,21 +1,21 @@
 
 public class FriedEggMan extends SuperHero
 { 
-    private String capeColor;
     public FriedEggMan()
     {
-      capeColor="Yellow";
+      setSuitColor("Yellow");
+      setCape(true);
     } // end zero-arg constructor SuperHero
     
     public String motto()   
     {
-        return "Whyyyyyyyyyyyyyy";
+        return "Use the bamboo copter!";
     }
 
     public String toString()
     {
         String output = new String();
-        output =  getSuitColor() +"\t" + isCaped();
+        output ="FriedEggMan\t"+  getSuitColor() +"\t" + isCaped() +"\t"+motto();
         return output;
     } // end method toString
 }

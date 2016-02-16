@@ -1,21 +1,21 @@
 
 public class DoraeMan extends SuperHero
 { 
-    private String capeColor;
     public DoraeMan()
     {
-      capeColor="Yellow";
+      setSuitColor("Blue");
+            setCape(false);
     } // end zero-arg constructor SuperHero
     
     public String motto()   
     {
-        return "Y u stupid nobita-kun";
+        return "Go through the dokodemo door!";
     }
 
     public String toString()
     {
         String output = new String();
-        output =  getSuitColor() +"\t" + isCaped() +"\t" +capeColor;
+        output = "DoraeMan\t"+ getSuitColor() +"\t" + isCaped() + "\t"+motto();
         return output;
     } // end method toString
 }
