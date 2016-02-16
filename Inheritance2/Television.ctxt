@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Television()
+comment1.params=initialModel\ initialPrice
+comment1.target=Television(java.lang.String,\ double)
+comment2.params=newModel
+comment2.target=void\ setModel(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getModel()
+comment4.params=newPrice
+comment4.target=void\ setPrice(double)
+comment5.params=
+comment5.target=double\ getPrice()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
