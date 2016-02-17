@@ -32,13 +32,25 @@ public class SuperHeroDriver     {
             {
                 if (counter<capes.size())
                     capedHeroes[r][c]= capes.get(counter);
-
-                System.out.print (capedHeroes[r][c]+ "\t");
+                if (capedHeroes[r][c]!=null)
+                {
+                    System.out.print (capedHeroes[r][c].getClass()+ "\t");
+                }else 
+                    System.out.print (capedHeroes[r][c]+ "\t");
                 counter++;
             }
             System.out.println();
         }
+        System.out.println ("\nCaped Heroes, non array [][]");
+        for (SuperHero  x : capes)
+        {
+            System.out.println (x);
+        }
 
-     
+        System.out.println ("\nRemaining heores");
+        for (SuperHero x : heroes)
+        {
+            System.out.println (x);
+        }
     }
 } //end class StudentDriver
