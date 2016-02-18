@@ -12,9 +12,9 @@ public abstract class Student
 
     public Student(String name, String major, int units)
     {
-        name =name;
-        major = major;
-        units = units;
+        this.name =name;
+        this.major = major;
+        this.units = units;
     } 
 
     public void setName(String name)
@@ -52,7 +52,7 @@ public abstract class Student
   public String toString()
     {
         String output = new String();
-        output = "Name is\t"+ name +"\tMajor is" + major + "\tUnits taken: "+units+"\tTuitition Fees: "+calculateTuition();
+        output = "Name is\t"+ name +"\tMajor is " + major + "\tUnits taken: "+units+"\tTuitition Fees: "+calculateTuition();
         return output;
     } // end method toString
 } // end abstract class SuperHero

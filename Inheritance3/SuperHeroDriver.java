@@ -13,38 +13,42 @@ public class SuperHeroDriver     {
         }
 
         SuperHero [][] capedHeroes = new SuperHero [3][3];
-        ArrayList<SuperHero> capes = new ArrayList<SuperHero>();
-        for (int i=0;i<heroes.size();i++)
-        {
-            if (heroes.get(i).isCaped()==true)
-            {
-                capes.add(heroes.get(i));
-                heroes.remove(i);
-
-                i--;
-            }
-        }
         int counter=0;
         System.out.println ("\nCaped Heroes");
         for (int r =0;r<capedHeroes.length;r++)
         {
             for (int c=0;c<capedHeroes[0].length;c++)
             {
-                if (counter<capes.size())
-                    capedHeroes[r][c]= capes.get(counter);
+                if (heroes.get(counter).isCaped()==true)
+                {
+                    if (counter<heroes.size())
+                    {   capedHeroes[r][c]= heroes.get(counter);
+                        heroes.remove(counter);
+                     
+                    } else
+                    {
+                        counter++;
+                    }
+                }
                 if (capedHeroes[r][c]!=null)
                 {
                     System.out.print (capedHeroes[r][c].getClass()+ "\t");
                 }else 
                     System.out.print (capedHeroes[r][c]+ "\t");
-                counter++;
+
             }
             System.out.println();
         }
-        System.out.println ("\nCaped Heroes, non array [][]");
-        for (SuperHero  x : capes)
+
+        System.out.println ("\nCaped Heroes");
+        for (SuperHero[]  x : capedHeroes )
         {
-            System.out.println (x);
+            for (SuperHero k : x )
+            {
+                if (k!=null)
+
+                    System.out.println (k);
+            }
         }
 
         System.out.println ("\nRemaining heores");
