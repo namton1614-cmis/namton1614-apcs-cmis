@@ -11,21 +11,22 @@ public class SuperHeroDriver     {
         {
             System.out.println (x);
         }
-
         SuperHero [][] capedHeroes = new SuperHero [3][3];
         int counter=0;
         System.out.println ("\nCaped Heroes");
+
         for (int r =0;r<capedHeroes.length;r++)
         {
             for (int c=0;c<capedHeroes[0].length;c++)
             {
-                if (heroes.get(counter).isCaped()==true)
+                if (counter<heroes.size())
                 {
-                    if (counter<heroes.size())
-                    {   capedHeroes[r][c]= heroes.get(counter);
+                    if (heroes.get(counter).isCaped()==true)
+                    {
+                        capedHeroes[r][c]= heroes.get(counter);
                         heroes.remove(counter);
-                     
-                    } else
+                    }
+                    else
                     {
                         counter++;
                     }
