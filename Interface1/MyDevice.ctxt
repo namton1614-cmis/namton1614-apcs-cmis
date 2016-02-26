@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyDevice()
+comment1.params=memory\ color
+comment1.target=MyDevice(int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ connectToBluetooth()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
