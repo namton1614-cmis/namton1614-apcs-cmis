@@ -1,5 +1,5 @@
 
-public class MyPhone extends MyDevice
+public class MyPhone extends MyDevice 
 {
     private String name;
     private boolean power;
@@ -11,15 +11,7 @@ public class MyPhone extends MyDevice
         this.power = power;
     }
 
-    public boolean getPower()
-    {
-        return power;
-    }
 
-    public String getName()
-    {
-        return name;
-    }
 
     public String toString()
     {

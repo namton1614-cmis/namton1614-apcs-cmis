@@ -1,29 +1,27 @@
 
-public class MyCar extends Vehicle implements Connectable
+public class MyCar extends Vehicle implements Connectable, Discountable
 {
-    private String name;
+    private int hpw;
 
-    public  MyCar (int memory, String color, String name)
+    public  MyCar (int wheel, String color, int hpw)
     {
-        super (memory,color);
-        this.name=name;
-
+        super (wheel,color);
+        this.hpw=hpw;
     }
 
-    public boolean getPower()
+    public boolean discount()
     {
-        return power;
+        return true;
     }
 
-    public String getName()
+    public void connectToBluetooth()
     {
-        return name;
+        System.out.print("Connecting to bluetooth for a MyCar");
     }
 
     public String toString()
     {
-        return super.toString() +
-        String.format("\nName of Phone: %s\nPotential Unlocked? %s" ,name, power);
+        return super.toString() +"\nHPW: "+hpw;
 
     }
 }

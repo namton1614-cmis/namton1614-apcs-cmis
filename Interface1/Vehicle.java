@@ -16,7 +16,7 @@ public abstract class Vehicle
 
     public String toString()
     {
-     // String output ="\nDevice memory: "+wheel +"\nDevice color: "+ color; 
-     // return output;
+      String output ="\nNumber of wheels: "+wheel +"\nColor: "+ color; 
+      return output;
     }
 }

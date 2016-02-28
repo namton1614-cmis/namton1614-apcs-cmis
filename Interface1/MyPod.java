@@ -1,19 +1,18 @@
 
-public class MyPod extends MyDevice
+public class MyPod extends MyDevice implements Discountable
 {
     private String name;
-    private boolean power;
 
-    public  MyPod (int memory, String color, String name, boolean power)
+    public  MyPod (int memory, String color, String name)
     {
         super (memory,color);
         this.name=name;
-        this.power = power;
+
     }
 
-    public boolean getPower()
+    public boolean discount()
     {
-        return power;
+        return true;
     }
 
     public String getName()
@@ -24,7 +23,7 @@ public class MyPod extends MyDevice
     public String toString()
     {
         return super.toString() +
-        String.format("\nName of Phone: %s\nPotential Unlocked? %s" ,name, power);
+        String.format("\nName of Phone: %s\n" ,name);
 
     }
 }
