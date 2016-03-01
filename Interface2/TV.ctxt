@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ tvOn()
+comment1.params=tvOn
+comment1.target=TV(boolean)
+comment2.params=
+comment2.target=java.lang.String\ tvType()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

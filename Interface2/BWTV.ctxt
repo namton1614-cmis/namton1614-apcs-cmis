@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=tvOn
+comment0.target=BWTV(boolean)
+comment1.params=
+comment1.target=java.lang.String\ rotateRabbitEars()
+comment2.params=
+comment2.target=java.lang.String\ tvType()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
