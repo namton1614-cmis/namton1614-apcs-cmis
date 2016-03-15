@@ -18,6 +18,7 @@ public class WombatWorld extends World
     {
         super(8, 8, 60);        
         setBackground("cell.jpg");
+        prepare();
     }
 
     /**
@@ -27,7 +28,7 @@ public class WombatWorld extends World
     {
         Wombat w1 = new Wombat();
         addObject(w1, 3, 3);
-        
+
         Wombat w2 = new Wombat();
         addObject(w2, 1, 7);
 
@@ -45,11 +46,11 @@ public class WombatWorld extends World
 
         Leaf l5 = new Leaf();
         addObject(l5, 5, 0);
-        
+
         Leaf l6 = new Leaf();
         addObject(l6, 4, 7);
     }
-    
+
     /**
      * Place a number of leaves into the world at random places.
      * The number of leaves can be specified.
@@ -62,5 +63,13 @@ public class WombatWorld extends World
             int y = Greenfoot.getRandomNumber(getHeight());
             addObject(leaf, x, y);
         }
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
     }
 }
