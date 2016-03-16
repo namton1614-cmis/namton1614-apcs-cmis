@@ -18,7 +18,6 @@ public class Level1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(16, 8, 60);   
         prepare();
-                  Greenfoot.playSound("1 - Hiroshige No. 36 ~ Neo Super-Express.mp3");
     }
 
     private void prepare()

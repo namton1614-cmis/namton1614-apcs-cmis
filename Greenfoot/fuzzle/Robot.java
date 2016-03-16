@@ -8,8 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Robot extends Actor
 {
-    private   int horizontal;
-    private   int vertical;
     private int direction;
 
     public Robot()
@@ -28,66 +26,27 @@ public class Robot extends Actor
 
     public void movement()
     {
-        horizontal=0;
-        vertical=0;
-
         if (Greenfoot.isKeyDown("left"))
         {
             setDirection(1);
-            horizontal=-1;
-            Actor wall = getOneObjectAtOffset(horizontal,vertical, Wall.class);
-            Block block =(Block) getOneObjectAtOffset(horizontal,vertical, Block.class);
-
-            if (block != null)
-            { block.move(horizontal, vertical);
-                   Actor block2 = getOneObjectAtOffset(horizontal,vertical, Block.class);
-                if (block2==null)
-                    move();}
-            if (wall == null&&block==null)
-                move();
-        }
+            moveCheck(0,-1);
+        } else
         if (Greenfoot.isKeyDown("right"))
         {
             setDirection(0);
-            horizontal=1;
-            Actor wall = getOneObjectAtOffset(horizontal,vertical, Wall.class);           
-            Block block =(Block) getOneObjectAtOffset(horizontal,vertical, Block.class);
-            if (block != null)
-            { block.move(horizontal, vertical);
-                Actor block2 = getOneObjectAtOffset(horizontal,vertical, Block.class);
-                if (block2==null)
-                    move();}
-            if (wall == null&&block==null)
-                move();
-        }
+            moveCheck(0,1);
+        } else
         if (Greenfoot.isKeyDown("down"))
         {
             setDirection(3);
-            vertical=1;
-            Actor wall = getOneObjectAtOffset(horizontal,vertical, Wall.class);
-            Block block =(Block) getOneObjectAtOffset(horizontal,vertical, Block.class);
-            if (block != null)
-            { block.move(horizontal, vertical);
-                 Actor block2 = getOneObjectAtOffset(horizontal,vertical, Block.class);
-                if (block2==null)
-                    move();}
-            if (wall == null&&block==null)
-                move();
-        }
+            moveCheck(1,0);
+        } else
         if (Greenfoot.isKeyDown("up"))
         {
             setDirection(2);
-            vertical=-1;
-            Actor wall = getOneObjectAtOffset(horizontal,vertical, Wall.class);
-            Block block =(Block) getOneObjectAtOffset(horizontal,vertical, Block.class);
-            if (block != null)
-            { block.move(horizontal, vertical);
-                Actor block2 = getOneObjectAtOffset(horizontal,vertical, Block.class);
-                if (block2==null)
-                    move();}
-            if (wall == null&&block==null)
-                move();
+            moveCheck(-1,0);
         }
+
     }
 
     /**
@@ -109,6 +68,19 @@ public class Robot extends Actor
             setLocation(getX() - 1, getY());
             break;
         }
+    }
+
+    public void moveCheck(int vertical, int horizontal)
+    {
+        Actor wall = getOneObjectAtOffset(horizontal,vertical, Wall.class);
+        Block block =(Block) getOneObjectAtOffset(horizontal,vertical, Block.class);
+        if (block != null)
+        { block.move(horizontal, vertical);
+            Actor block2 = getOneObjectAtOffset(horizontal,vertical, Block.class);
+            if (block2==null)
+                move();}
+        else if (wall == null)
+            move();
     }
 
     public void setDirection(int direction)

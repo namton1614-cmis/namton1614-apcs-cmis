@@ -6,14 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Block extends Actor
+public class Block extends Impass
 {
 
     public void move(int horizontal, int vertical)
     {
-        Actor Block = getOneObjectAtOffset(horizontal, vertical, Block.class);
-        Actor Wall = getOneObjectAtOffset(horizontal, vertical, Wall.class);
-        if (Wall == null &&Block == null) 
+        Actor Impass = getOneObjectAtOffset(horizontal, vertical, Impass.class);
+        if (Impass == null) 
             setLocation(getX()+horizontal, getY()+vertical);
   
     }

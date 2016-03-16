@@ -6,9 +6,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Exit extends Actor
+public class Exit extends Impass
 {
-    /**
+  /**
      * Act - do whatever the Exit wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
@@ -21,7 +21,7 @@ public class Exit extends Actor
             World world; 
             world = getWorld();
             world.removeObject(robot);
-          Greenfoot.playSound("win.mp3");
+        //  Greenfoot.playSound("win.mp3");
         }
     }    
 }
