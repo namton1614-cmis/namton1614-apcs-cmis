@@ -11,9 +11,23 @@ public class Block extends Impass
 
     public void move(int horizontal, int vertical)
     {
-        Actor Impass = getOneObjectAtOffset(horizontal, vertical, Impass.class);
-        if (Impass == null) 
+        Actor Object = getOneObjectAtOffset(horizontal, vertical, Object.class);
+        Actor Water = getOneObjectAtOffset(horizontal, vertical, Water.class);
+        if (Water !=null)
+        {
             setLocation(getX()+horizontal, getY()+vertical);
-  
+
+            World world = getWorld();
+            FilledWater FilledWater = new FilledWater();
+            world.addObject(FilledWater,this.getX(),this.getY());
+            world.removeObject(Water);
+            world.removeObject(this);
+
+          
+        }
+        else
+        if (Object == null) 
+            setLocation(getX()+horizontal, getY()+vertical);
+
     }
 }

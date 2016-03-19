@@ -30,5 +30,7 @@ public class Level2 extends World
         addObject(wall,7,6);
         Wall wall2 = new Wall();
         addObject(wall2,7,8);
+        Exit exit = new Exit();
+        addObject(exit,8,7);
     }
 }
