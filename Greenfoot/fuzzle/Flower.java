@@ -15,7 +15,7 @@ public class Flower extends Collectibles implements Collectible
         if (Robot!=null)
         {World world = getWorld();
             world.removeObject(this);
-           Robot.increasePlant( power);
+            Robot.increasePlant( power);
         }   
 
     }

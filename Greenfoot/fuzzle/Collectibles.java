@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public abstract class Collectibles extends Actor
+public abstract class Collectibles extends Object
 {
     int power;
     public void collect() 

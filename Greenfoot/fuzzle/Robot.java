@@ -10,11 +10,17 @@ public class Robot extends AbstractRobot
 {
     private int plantPower;
 
-
-
     public void increasePlant(int power)
     {
         plantPower+=power;
+        World world; 
+        world = getWorld();
+        world.showText("Plants acquired: " + plantPower, 1, 1);
+    }
+    
+    public int getPlantPower()
+    {
+    return plantPower;
     }
 
 }

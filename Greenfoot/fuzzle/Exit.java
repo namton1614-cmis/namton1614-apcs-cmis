@@ -14,13 +14,17 @@ public class Exit extends Object
      */
     public void act() 
     {
-        Actor robot;
-        robot = getOneObjectAtOffset(0,0,Robot.class);  
+        Robot robot;
+        robot =(Robot) getOneObjectAtOffset(0,0,Robot.class);  
         if (robot!=null)
         {
-            World world; 
-            world = getWorld();
-            world.removeObject(robot);
+            Level1 world; 
+            world =(Level1) getWorld();
+            if (robot.getPlantPower()>=world.getPlant())
+            {
+                world.removeObject(robot);
+            }
+
             //  Greenfoot.playSound("win.mp3");
         }
     }    

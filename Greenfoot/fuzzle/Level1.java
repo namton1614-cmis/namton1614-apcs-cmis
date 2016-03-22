@@ -8,7 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level1 extends World
 {
-
+   private int plantsReq =12;
+   
+   public int getPlant()
+   {
+    return plantsReq;
+    }
     /**
      * Constructor for objects of class Level1.
      * 
@@ -17,6 +22,7 @@ public class Level1 extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(16, 8, 60);   
+        this.showText("Required plants ="+plantsReq,2,0);
         prepare();
     }
 
@@ -43,14 +49,49 @@ public class Level1 extends World
         addObject(wall2,8,4);
         Wall wall3 = new Wall();
         addObject(wall3,8,5);
-    Flower flower = new Flower();
-addObject(flower,6,1);
-Flower flower2 = new Flower();
-addObject(flower2,10,1);
-Cactus cactus = new Cactus();
-addObject(cactus,8,6);
-Cactus cactus2 = new Cactus();
-addObject(cactus2,11,7);
+        Flower flower = new Flower();
+        addObject(flower,6,1);
+        Flower flower2 = new Flower();
+        addObject(flower2,10,1);
+        Cactus cactus = new Cactus();
+        addObject(cactus,8,6);
+        Cactus cactus2 = new Cactus();
+        addObject(cactus2,11,7);
+    exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(13,3);
+exit.setLocation(15,0);
+exit.setLocation(15,6);
+Wall wall4 = new Wall();
+addObject(wall4,14,6);
+Wall wall5 = new Wall();
+addObject(wall5,14,7);
 }
 
 }
