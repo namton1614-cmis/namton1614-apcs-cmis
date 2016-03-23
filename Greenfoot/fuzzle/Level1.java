@@ -8,20 +8,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level1 extends World
 {
-   private int plantsReq =12;
-   
-   public int getPlant()
-   {
-    return plantsReq;
+    private int plantsReq =12;
+
+    public int getPlant()
+    {
+        return plantsReq;
     }
+
     /**
      * Constructor for objects of class Level1.
      * 
      */
     public Level1()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(16, 8, 60);   
+                setPaintOrder(AbstractRobot.class,Enemy.class,Object.class);
         this.showText("Required plants ="+plantsReq,2,0);
         prepare();
     }
@@ -57,41 +58,46 @@ public class Level1 extends World
         addObject(cactus,8,6);
         Cactus cactus2 = new Cactus();
         addObject(cactus2,11,7);
-    exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(13,3);
-exit.setLocation(15,0);
-exit.setLocation(15,6);
-Wall wall4 = new Wall();
-addObject(wall4,14,6);
-Wall wall5 = new Wall();
-addObject(wall5,14,7);
-}
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(13,3);
+        exit.setLocation(15,0);
+        exit.setLocation(15,6);
+        Wall wall4 = new Wall();
+        addObject(wall4,14,6);
+        Wall wall5 = new Wall();
+        addObject(wall5,14,7);
+        block.setLocation(6,5);
+        water3.setLocation(15,5);
+        water2.setLocation(15,4);
+        Wall wall6 = new Wall();
+        addObject(wall6,14,5);
+    }
 
 }

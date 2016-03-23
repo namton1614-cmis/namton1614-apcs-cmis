@@ -41,8 +41,11 @@ public class Hedgehog extends Enemy
             Actor object = getOneObjectAtOffset(direction, 0, Object.class);
             if (object!=null || this.isAtEdge()==true)
             {
-                setRotation(180);
+                turn(180);
                 direction*=-1;
+                getImage().mirrorVertically();
+                System.out.print(object);
+                if (this.isAtEdge()==true)
                 move(1);
             }
             else
