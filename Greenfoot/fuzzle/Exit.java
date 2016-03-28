@@ -24,7 +24,6 @@ public class Exit extends Object
             {
                 world.removeObject(robot);
             }
-
             //  Greenfoot.playSound("win.mp3");
         }
     }    

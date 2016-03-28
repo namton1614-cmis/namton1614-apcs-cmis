@@ -46,7 +46,7 @@ public class Hedgehog extends Enemy
                 getImage().mirrorVertically();
                 System.out.print(object);
                 if (this.isAtEdge()==true)
-                move(1);
+                    move(1);
             }
             else
                 move(1);
