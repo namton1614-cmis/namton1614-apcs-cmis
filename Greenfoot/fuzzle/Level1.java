@@ -22,7 +22,7 @@ public class Level1 extends World
     public Level1()
     {    
         super(16, 8, 60);   
-                setPaintOrder(AbstractRobot.class,Enemy.class,Object.class);
+                setPaintOrder(Fire.class,AbstractRobot.class,Enemy.class,Object.class);
         this.showText("Required plants ="+plantsReq,2,0);
         prepare();
     }
@@ -98,6 +98,15 @@ public class Level1 extends World
         water2.setLocation(15,4);
         Wall wall6 = new Wall();
         addObject(wall6,14,5);
+        Block block5 = new Block();
+        addObject(block5,5,4);
+        Block block6 = new Block();
+        addObject(block6,7,4);
+        LeftSnek leftsnek = new LeftSnek();
+        addObject(leftsnek,9,2);
+        RightSnek rightsnek = new RightSnek();
+        addObject(rightsnek,15,1);
+
     }
 
 }

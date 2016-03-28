@@ -23,7 +23,11 @@ public class AbstractRobot extends Actor
     {
         movement();
         collect();
+        bomb();
     }    
+    
+    public void bomb()
+    {}
 
     public void collect()
     {
