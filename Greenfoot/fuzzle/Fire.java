@@ -14,6 +14,12 @@ public class Fire extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if (Greenfoot.getRandomNumber(100) <2)
+        {
+            World world = getWorld();
+            world.removeObject(this);
+        }
+
     }    
+    
 }

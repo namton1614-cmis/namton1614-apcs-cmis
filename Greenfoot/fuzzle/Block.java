@@ -16,7 +16,6 @@ public class Block extends Impass
         if (Water !=null)
         {
             setLocation(getX()+horizontal, getY()+vertical);
-
             World world = getWorld();
             FilledWater FilledWater = new FilledWater();
             world.addObject(FilledWater,this.getX(),this.getY());

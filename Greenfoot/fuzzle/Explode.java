@@ -14,6 +14,32 @@ public class Explode extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        if (Greenfoot.getRandomNumber(100) <2)
+        {
+            World world = getWorld();
+            Fire Fire = new Fire();
+            world.addObject(Fire,this.getX(),this.getY());
+            explode();
+            world.removeObject(this);
+        }
+
+    }   
+
+    public void explode()
+    {
+        World world = getWorld();
+        Actor right = getOneObjectAtOffset(1, 0, Object.class);
+        Actor left = getOneObjectAtOffset(-1, 0, Object.class);
+        Actor up = getOneObjectAtOffset(0, 1, Object.class);
+        Actor down = getOneObjectAtOffset(0, -1, Object.class);
+        if (right != null) 
+            world.removeObject(right);
+        if (left != null) 
+            world.removeObject(left);
+        if (up != null) 
+            world.removeObject(up);
+        if (down != null) 
+            world.removeObject(down);
+
+    }
 }

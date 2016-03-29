@@ -18,9 +18,10 @@ public class Exit extends Object
         robot =(Robot) getOneObjectAtOffset(0,0,Robot.class);  
         if (robot!=null)
         {
-            Level1 world; 
-            world =(Level1) getWorld();
-            if (robot.getPlantPower()>=world.getPlant())
+
+            World world = getWorld();
+            world.removeObject(this);
+            if (robot.getPlantPower()>=robot.getPlantRequired())
             {
                 world.removeObject(robot);
             }

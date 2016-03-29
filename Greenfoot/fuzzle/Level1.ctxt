@@ -2,10 +2,8 @@
 comment0.target=Level1
 comment0.text=\n\ Write\ a\ description\ of\ class\ Level1\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
-comment1.target=int\ getPlant()
+comment1.target=Level1()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Level1.\n\ \n
 comment2.params=
-comment2.target=Level1()
-comment2.text=\n\ Constructor\ for\ objects\ of\ class\ Level1.\n\ \n
-comment3.params=
-comment3.target=void\ prepare()
-numComments=4
+comment2.target=void\ prepare()
+numComments=3

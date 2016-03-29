@@ -8,12 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level1 extends World
 {
-    private int plantsReq =12;
-
-    public int getPlant()
-    {
-        return plantsReq;
-    }
 
     /**
      * Constructor for objects of class Level1.
@@ -23,7 +17,7 @@ public class Level1 extends World
     {    
         super(16, 8, 60);   
                 setPaintOrder(Fire.class,AbstractRobot.class,Enemy.class,Object.class);
-        this.showText("Required plants ="+plantsReq,2,0);
+
         prepare();
     }
 
@@ -107,6 +101,10 @@ public class Level1 extends World
         RightSnek rightsnek = new RightSnek();
         addObject(rightsnek,15,1);
 
+        Bomb bomb = new Bomb();
+        addObject(bomb,2,2);
+        Bomb bomb2 = new Bomb();
+        addObject(bomb2,2,1);
     }
 
 }

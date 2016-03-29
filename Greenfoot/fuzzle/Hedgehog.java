@@ -26,8 +26,7 @@ public class Hedgehog extends Enemy
         robot =(Robot) getOneObjectAtOffset(0,0,Robot.class);  
         if (robot!=null)
         {
-            Level1 world; 
-            world =(Level1) getWorld();
+            World world = getWorld();
             world.removeObject(robot);
 
         }
@@ -46,7 +45,11 @@ public class Hedgehog extends Enemy
                 getImage().mirrorVertically();
                 System.out.print(object);
                 if (this.isAtEdge()==true)
-                    move(1);
+                {
+                    Actor object2 = getOneObjectAtOffset(direction, 0, Object.class);
+                    if (object2==null)
+                        move(1);
+                }
             }
             else
                 move(1);

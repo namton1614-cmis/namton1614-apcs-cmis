@@ -15,7 +15,7 @@ public abstract class Snek extends Impass implements Attack
      */
     public void act() 
     {
-        if (Greenfoot.getRandomNumber(100) >70)
+        if (Greenfoot.getRandomNumber(100) >30)
         {
             Actor Object = getOneObjectAtOffset(direction, 0, Object.class);
 

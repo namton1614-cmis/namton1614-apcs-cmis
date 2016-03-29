@@ -11,9 +11,11 @@ public abstract class SnekAttack extends Enemy
     int direction=0;
     public void act() 
     {
-        movement();
+
+        attack();
         if(getWorld()!=null)
-            attack();
+            movement();
+
     }    
 
     public void attack()
@@ -22,8 +24,7 @@ public abstract class SnekAttack extends Enemy
         robot =(Robot) getOneObjectAtOffset(0,0,Robot.class);  
         if (robot!=null)
         {
-            Level1 world; 
-            world =(Level1) getWorld();
+            World world = getWorld();
             world.removeObject(robot);
             world.removeObject(this);
         }
@@ -34,8 +35,7 @@ public abstract class SnekAttack extends Enemy
         Actor object = getOneObjectAtOffset(direction, 0, Object.class);
         if (object!=null || this.isAtEdge()==true)
         {
-            Level1 world; 
-            world =(Level1) getWorld();
+            World world = getWorld();
             world.removeObject(this);
         }
         else
