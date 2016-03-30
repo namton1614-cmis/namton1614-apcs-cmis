@@ -6,9 +6,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Hedgehog extends Enemy
+public class Hedgehog extends Enemy implements Exploder
 {
-
+    private int explodeCounter=0;
     private int direction=1;
     /**
      * Act - do whatever the Hedgehog wants to do. This method is called whenever
@@ -18,18 +18,13 @@ public class Hedgehog extends Enemy
     {
         movement();
         attack();
+        if (explodeCounter>5)
+                    explode();
     }    
 
     public void attack()
     {
-        Robot robot;
-        robot =(Robot) getOneObjectAtOffset(0,0,Robot.class);  
-        if (robot!=null)
-        {
-            World world = getWorld();
-            world.removeObject(robot);
-
-        }
+  killRobot();
     }
 
     public void movement()
@@ -44,6 +39,8 @@ public class Hedgehog extends Enemy
                 direction*=-1;
                 getImage().mirrorVertically();
                 System.out.print(object);
+                explodeCounter++;
+                
                 if (this.isAtEdge()==true)
                 {
                     Actor object2 = getOneObjectAtOffset(direction, 0, Object.class);
@@ -52,7 +49,30 @@ public class Hedgehog extends Enemy
                 }
             }
             else
+            {
                 move(1);
+                explodeCounter=0;
+            }
         }
+    }
+
+    public void explode()
+    {
+        World world = getWorld();
+        Actor right = getOneObjectAtOffset(1, 0, BombDestroyerAble.class);
+        Actor left = getOneObjectAtOffset(-1, 0, BombDestroyerAble.class);
+        Actor up = getOneObjectAtOffset(0, 1, BombDestroyerAble.class);
+        Actor down = getOneObjectAtOffset(0, -1, BombDestroyerAble.class);
+        if (right != null) 
+            world.removeObject(right);
+        if (left != null) 
+            world.removeObject(left);
+        if (up != null) 
+            world.removeObject(up);
+        if (down != null) 
+            world.removeObject(down);
+        Fire Fire = new Fire();
+        world.addObject(Fire,this.getX(),this.getY());
+        world.removeObject(this);
     }
 }

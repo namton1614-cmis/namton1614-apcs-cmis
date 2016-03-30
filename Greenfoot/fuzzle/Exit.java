@@ -24,6 +24,7 @@ public class Exit extends Object
             if (robot.getPlantPower()>=robot.getPlantRequired())
             {
                 world.removeObject(robot);
+                Greenfoot.setWorld(new Level2());
             }
             //  Greenfoot.playSound("win.mp3");
         }

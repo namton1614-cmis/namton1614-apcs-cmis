@@ -25,7 +25,7 @@ public abstract class SnekAttack extends Enemy
         if (robot!=null)
         {
             World world = getWorld();
-            world.removeObject(robot);
+            killRobot();
             world.removeObject(this);
         }
     }

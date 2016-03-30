@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Block extends Impass
+public class Block extends BombDestroyerAble
 {
 
     public void move(int horizontal, int vertical)

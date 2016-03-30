@@ -8,4 +8,6 @@ comment2.params=
 comment2.target=void\ attack()
 comment3.params=
 comment3.target=void\ movement()
-numComments=4
+comment4.params=
+comment4.target=void\ explode()
+numComments=5

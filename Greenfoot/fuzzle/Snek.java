@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public abstract class Snek extends Impass implements Attack
+public abstract class Snek extends BombDestroyerAble implements Attack
 {
     int direction;
     /**

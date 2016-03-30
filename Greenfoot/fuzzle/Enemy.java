@@ -14,8 +14,18 @@ public class Enemy extends Object
      */
     public void act() 
     {
-        
+
     }    
 
-
+    public void killRobot()
+    {
+        Robot robot;
+        robot =(Robot) getOneObjectAtOffset(0,0,Robot.class);  
+        if (robot!=null)
+        {
+            World world = getWorld();
+            world.removeObject(robot);
+        }
+                Greenfoot.setWorld(new GameOver());
+    }
 }

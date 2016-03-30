@@ -11,8 +11,7 @@ public class Robot extends AbstractRobot
     private int plantPower;
     private int bombNo =0;
     private int plantRequire =20;
-    
-    
+
     public void increasePlant(int power)
     {
         plantPower+=power;
@@ -34,10 +33,10 @@ public class Robot extends AbstractRobot
     {
         return plantPower;
     }
-    
+
     public int getPlantRequired()
     {
-    return plantRequire;
+        return plantRequire;
     }
 
     public void bomb()

@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Explode extends Actor
+public class Explode extends Actor implements Exploder
 {
     /**
      * Act - do whatever the Explode wants to do. This method is called whenever
@@ -28,10 +28,10 @@ public class Explode extends Actor
     public void explode()
     {
         World world = getWorld();
-        Actor right = getOneObjectAtOffset(1, 0, Object.class);
-        Actor left = getOneObjectAtOffset(-1, 0, Object.class);
-        Actor up = getOneObjectAtOffset(0, 1, Object.class);
-        Actor down = getOneObjectAtOffset(0, -1, Object.class);
+        Actor right = getOneObjectAtOffset(1, 0, BombDestroyerAble.class);
+        Actor left = getOneObjectAtOffset(-1, 0, BombDestroyerAble.class);
+        Actor up = getOneObjectAtOffset(0, 1, BombDestroyerAble.class);
+        Actor down = getOneObjectAtOffset(0, -1, BombDestroyerAble.class);
         if (right != null) 
             world.removeObject(right);
         if (left != null) 
