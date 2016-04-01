@@ -16,16 +16,15 @@ public class Exit extends Object
     {
         Robot robot;
         robot =(Robot) getOneObjectAtOffset(0,0,Robot.class);  
-        if (robot!=null)
+        if (robot!=null&&robot.getPlantPower()>=robot.getPlantRequired())
         {
 
-            World world = getWorld();
+            Levels world =(Levels) getWorld();
             world.removeObject(this);
-            if (robot.getPlantPower()>=robot.getPlantRequired())
-            {
-                world.removeObject(robot);
-                Greenfoot.setWorld(new Level2());
-            }
+
+            world.removeObject(robot);
+            world.newLevel();
+
             //  Greenfoot.playSound("win.mp3");
         }
     }    

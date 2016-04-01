@@ -17,8 +17,8 @@ public class Robot extends AbstractRobot
         plantPower+=power;
         World world; 
         world = getWorld();
-        world.showText("Required plants ="+plantRequire,2,0);
-        world.showText("Plants acquired: " + plantPower, 1, 1);
+        world.showText("Required plants:"+plantRequire,2,0);
+        world.showText("Plants acquired:" + plantPower, 2, 1);
     }
 
     public void increaseBomb()
@@ -26,7 +26,7 @@ public class Robot extends AbstractRobot
         bombNo++;
         World world; 
         world = getWorld();
-        world.showText("No of Bombs: " + bombNo, 1, 2);
+        world.showText("No of Bombs:" + bombNo, 1, 2);
     }
 
     public int getPlantPower()

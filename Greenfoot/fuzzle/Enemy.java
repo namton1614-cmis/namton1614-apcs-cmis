@@ -25,7 +25,8 @@ public class Enemy extends Object
         {
             World world = getWorld();
             world.removeObject(robot);
+            Greenfoot.setWorld(new GameOver());
         }
-                Greenfoot.setWorld(new GameOver());
+
     }
 }

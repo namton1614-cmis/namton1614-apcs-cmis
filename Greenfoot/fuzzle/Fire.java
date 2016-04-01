@@ -14,7 +14,7 @@ public class Fire extends Enemy
      */
     public void act() 
     {
-killRobot();
+        killRobot();
         if (Greenfoot.getRandomNumber(100) <2)
         {
             World world = getWorld();

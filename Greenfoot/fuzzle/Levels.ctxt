@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Levels
+comment0.text=\n\ Write\ a\ description\ of\ class\ Levels\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=l\ w\ s
+comment1.target=Levels(int,\ int,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Levels.\n\ \n
+comment2.params=
+comment2.target=void\ newLevel()
+numComments=3
