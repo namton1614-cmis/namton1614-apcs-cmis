@@ -145,7 +145,7 @@ public class Level3 extends Levels
         Block block14 = new Block();
         addObject(block14,3,7);
         Flower flower11 = new Flower();
-        addObject(flower11,11,3);
+        addObject(flower11,10,3);
         Flower flower12 = new Flower();
         addObject(flower12,4,5);
         flower12.setLocation(2,4);
@@ -169,5 +169,11 @@ public class Level3 extends Levels
         addObject(water52,14,3);
         Water water53 = new Water();
         addObject(water53,6,7);
+    }
+    
+         public void newLevel()
+    {
+
+        Greenfoot.setWorld(new Level4());
     }
 }
