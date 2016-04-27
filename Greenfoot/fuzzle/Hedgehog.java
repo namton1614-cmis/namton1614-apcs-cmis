@@ -19,12 +19,12 @@ public class Hedgehog extends Enemy implements Exploder
         movement();
         attack();
         if (explodeCounter>5)
-                    explode();
+            explode();
     }    
 
     public void attack()
     {
-  killRobot();
+        killRobot();
     }
 
     public void movement()
@@ -40,7 +40,7 @@ public class Hedgehog extends Enemy implements Exploder
                 getImage().mirrorVertically();
                 System.out.print(object);
                 explodeCounter++;
-                
+
                 if (this.isAtEdge()==true)
                 {
                     Actor object2 = getOneObjectAtOffset(direction, 0, Object.class);

@@ -1,14 +1,16 @@
 #BlueJ class context
 comment0.target=Robot
 comment0.text=\n\ Write\ a\ description\ of\ class\ robot\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=power
-comment1.target=void\ increasePlant(int)
-comment2.params=
-comment2.target=void\ increaseBomb()
+comment1.params=
+comment1.target=Robot()
+comment2.params=power
+comment2.target=void\ increasePlant(int)
 comment3.params=
-comment3.target=int\ getPlantPower()
+comment3.target=void\ increaseBomb()
 comment4.params=
-comment4.target=int\ getPlantRequired()
+comment4.target=int\ getPlantPower()
 comment5.params=
-comment5.target=void\ bomb()
-numComments=6
+comment5.target=int\ getPlantRequired()
+comment6.params=
+comment6.target=void\ bomb()
+numComments=7

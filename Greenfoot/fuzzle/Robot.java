@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
 /**
  * Write a description of class robot here.
  * 
@@ -11,6 +11,15 @@ public class Robot extends AbstractRobot
     private int plantPower;
     private int bombNo =0;
     private int plantRequire =20;
+    ArrayList<String> myFamily = new ArrayList<String>(); 
+    public Robot()
+    {
+        super();
+
+        myFamily.add("Required plants:"+plantRequire);
+        myFamily.add("Plants acquired:" + plantPower);
+        myFamily.add("No of Bombs:" + bombNo);
+    }
 
     public void increasePlant(int power)
     {
@@ -26,7 +35,7 @@ public class Robot extends AbstractRobot
         bombNo++;
         World world; 
         world = getWorld();
-        world.showText("No of Bombs:" + bombNo, 1, 2);
+        world.showText("No of Bombs: " + bombNo , 2, 2);
     }
 
     public int getPlantPower()
