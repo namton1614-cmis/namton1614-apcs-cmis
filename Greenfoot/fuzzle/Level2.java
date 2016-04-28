@@ -18,7 +18,7 @@ public class Level2 extends Levels
 
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(16, 10, 60);   
-        setPaintOrder(Fire.class,AbstractRobot.class,Enemy.class,Object.class);
+
         prepare();
 
     }

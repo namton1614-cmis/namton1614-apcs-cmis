@@ -16,7 +16,7 @@ public class Level1 extends Levels
     public Level1()
     {    
         super(16, 10, 60);   
-        setPaintOrder(Fire.class,AbstractRobot.class,Enemy.class,Object.class);
+
 
         prepare();
     }

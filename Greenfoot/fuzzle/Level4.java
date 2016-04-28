@@ -16,7 +16,7 @@ public class Level4 extends Levels
     public Level4()
     {
         super(16, 10, 60);   
-        setPaintOrder(Fire.class,AbstractRobot.class,Enemy.class,Object.class);
+
 
         prepare();
     }

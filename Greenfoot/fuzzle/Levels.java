@@ -15,13 +15,13 @@ public class Levels extends World
      */
     public Levels(int l,int w, int s)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+
         super(l, w, s); 
+        setPaintOrder(Fire.class,AbstractRobot.class,Enemy.class,Object.class);
     }
 
     public void newLevel()
     {
-
 
     }
 }

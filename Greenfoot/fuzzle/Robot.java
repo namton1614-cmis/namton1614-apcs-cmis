@@ -16,9 +16,9 @@ public class Robot extends AbstractRobot
     {
         super();
 
-        myFamily.add("Required plants:"+plantRequire);
-        myFamily.add("Plants acquired:" + plantPower);
-        myFamily.add("No of Bombs:" + bombNo);
+        myFamily.add("Required plants:");
+        myFamily.add("Plants acquired:" );
+        myFamily.add("No of Bombs:" );
     }
 
     public void increasePlant(int power)
@@ -26,8 +26,8 @@ public class Robot extends AbstractRobot
         plantPower+=power;
         World world; 
         world = getWorld();
-        world.showText("Required plants:"+plantRequire,2,0);
-        world.showText("Plants acquired:" + plantPower, 2, 1);
+        world.showText(myFamily.get(0)+plantRequire,2,0);
+        world.showText(myFamily.get(1) + plantPower, 2, 1);
     }
 
     public void increaseBomb()
@@ -35,7 +35,7 @@ public class Robot extends AbstractRobot
         bombNo++;
         World world; 
         world = getWorld();
-        world.showText("No of Bombs: " + bombNo , 2, 2);
+        world.showText(myFamily.get(2) + bombNo , 2, 2);
     }
 
     public int getPlantPower()
@@ -56,7 +56,7 @@ public class Robot extends AbstractRobot
             Explode Explode = new Explode();
             world.addObject(Explode,this.getX(),this.getY());
             bombNo--;
-            world.showText("No of Bombs: " + bombNo, 1, 2);
+            world.showText(myFamily.get(2) + bombNo, 2, 2);
         }
     }
 }
