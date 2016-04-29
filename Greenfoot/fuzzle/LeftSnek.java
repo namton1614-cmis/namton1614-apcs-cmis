@@ -8,13 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class LeftSnek extends Snek
 {
- 
+
     public   LeftSnek() 
     {
-direction=1;
+        direction=1;
     }    
-    
-       public void attack()
+
+    public void attack()
     {
         World world = getWorld();
         LeftSnekAttack SnekAttack = new LeftSnekAttack();

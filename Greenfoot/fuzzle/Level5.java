@@ -17,12 +17,12 @@ public class Level5 extends Levels
     {
         super(16, 10, 60);   
 
+
         prepare();
     }
 
     private void prepare()
     {
-        
-        
+
     }
 }
