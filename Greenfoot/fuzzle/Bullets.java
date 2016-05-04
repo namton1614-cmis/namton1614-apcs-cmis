@@ -11,7 +11,7 @@ public abstract class Bullets extends Final
     int direction=1;
     public void act() 
     {
-       
+       attack();
         if(getWorld()!=null)
             movement();
     }    

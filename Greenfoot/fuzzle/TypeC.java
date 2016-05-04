@@ -14,6 +14,6 @@ public class TypeC extends MyShots
      */
     public  TypeC() 
     {
-        setRotation(300);
+        setRotation(285);
     }    
 }

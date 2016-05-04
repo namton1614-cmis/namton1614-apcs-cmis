@@ -14,6 +14,6 @@ public class TypeB extends MyShots
      */
     public  TypeB() 
     {
-        setRotation(240);
+        setRotation(255);
     }    
 }
