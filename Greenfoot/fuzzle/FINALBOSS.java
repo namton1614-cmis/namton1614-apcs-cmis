@@ -33,5 +33,7 @@ public class FINALBOSS extends World
         addObject(type1,455,268);
         BossA bossa = new BossA();
         addObject(bossa,620,199);
+        Power power = new Power();
+        addObject(power,245,290);
     }
 }

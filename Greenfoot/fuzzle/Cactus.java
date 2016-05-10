@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Cactus extends Collectibles  implements Collectible
 
 {
- private int power = 5; 
+    private int power = 5; 
     public void collect() 
     {
         Robot Robot = (Robot)getOneObjectAtOffset(0, 0, Robot.class);

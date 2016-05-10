@@ -10,7 +10,7 @@ public class Fighter extends Final
 {
     private int speed;
     int counter=0;
-    int magicpower=67;
+    private int magicpower;
     public Fighter()
     {
         setRotation(270);
@@ -42,14 +42,10 @@ public class Fighter extends Final
             world.addObject(typeA,this.getX(),this.getY());
             if (magicpower>50)
             {
-
                 world.addObject(typeB,this.getX(),this.getY());
                 world.addObject(typeC,this.getX(),this.getY());
             }
-            if (magicpower>100)
-            {
 
-            }
             counter=0;
         }
 
@@ -58,7 +54,7 @@ public class Fighter extends Final
     public void move()
     { 
         int speed = this.speed;
-        if (Greenfoot.isKeyDown("shift"))
+        while (Greenfoot.isKeyDown("shift"))
         {
             speed=this.speed/2;
         }
@@ -78,6 +74,11 @@ public class Fighter extends Final
         {
             setLocation(getX(),getY()+speed);
         }
+    }
+
+    public void increasePower ( int power)
+    {
+      magicpower+=power;
     }
 
 }
