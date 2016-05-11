@@ -19,9 +19,9 @@ public class TypeD extends MyShots
 
     public void act() 
     {
-        attack();
+
        
-        turnTowards(40.getX(), 40.getY());
-        move(9);
+
+
     }    
 }

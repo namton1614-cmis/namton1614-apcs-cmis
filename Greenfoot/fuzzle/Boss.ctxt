@@ -16,4 +16,6 @@ comment6.params=
 comment6.target=void\ spawnPower()
 comment7.params=
 comment7.target=void\ movement()
-numComments=8
+comment8.params=
+comment8.target=void\ teleport()
+numComments=9

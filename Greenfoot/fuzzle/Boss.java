@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
 /**
  * Write a description of class Boss here.
  * 
@@ -10,11 +10,13 @@ public class Boss extends Final
 {
     private int hp;
     private int noPower;
+    private int tele;
 
     public Boss( int hp, int noPower)
     {
         this.hp=hp;
         this.noPower=noPower;
+        tele=0;
     }
 
     /**
@@ -28,7 +30,9 @@ public class Boss extends Final
             die();
         }
         powerStep();
-        movement();
+        if (getWorld()!=null)
+            movement();
+        teleport();
     }     
 
     public void die()
@@ -72,13 +76,25 @@ public class Boss extends Final
 
     public void movement()
     { 
-        int up=(int)(Math.random()*10)-5;
-        int right=(int)(Math.random()*20)-11;
-        
-        
+        int up=(int)(Math.random()*21)-10;
+        int right=(int)(Math.random()*21)-10;
 
         setLocation(getX()+right,getY());
         setLocation(getX(),getY()-up);
+        tele++;
+    }
 
+    public void teleport()
+    {
+        ArrayList<Integer> tp = new ArrayList<Integer>(); 
+        tp.add(200);
+        tp.add(400); 
+        tp.add(600);        tp.add(800);
+       int i =(int)(Math.random()*4);
+        if (tele>100)
+        {
+            tele=0;
+            setLocation( tp.get(i),200 );
+        }
     }
 }

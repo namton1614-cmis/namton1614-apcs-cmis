@@ -15,7 +15,7 @@ public class BossA extends Boss
      */
     public  BossA() 
     {
-        super(100,50);
+        super(2000,50);
 
     }    
 
