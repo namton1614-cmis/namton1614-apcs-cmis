@@ -19,6 +19,7 @@ public class FINALBOSS extends World
         super(1000, 700, 1); 
         Greenfoot.setSpeed(50);
         prepare();
+                setPaintOrder(Fighter.class, Boss.class);
     }
 
     /**
@@ -29,7 +30,7 @@ public class FINALBOSS extends World
     {
         Fighter fighter = new Fighter();
         addObject(fighter,587,621);
-        Type1 type1 = new Type1();
+        Type1 type1 = new Type1( 75);
         addObject(type1,455,268);
         BossA bossa = new BossA();
         addObject(bossa,620,199);

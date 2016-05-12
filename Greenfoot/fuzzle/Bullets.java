@@ -9,9 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public abstract class Bullets extends Final
 {
     int direction=1;
+    int counter=0;
     public void act() 
     {
-       attack();
+        attack();
+        turn(direction);
         if(getWorld()!=null)
             movement();
     }    
@@ -35,9 +37,15 @@ public abstract class Bullets extends Final
             World world = getWorld();
             world.removeObject(this);
         }
-        else
-            move(direction);
-
+        else if (counter<100)
+        {
+            move(1); 
+            counter++;
+        }
+        else 
+        {counter=0;
+            direction*=-1;
+        }
     }
 
 }

@@ -33,7 +33,11 @@ public class Boss extends Final
         if (getWorld()!=null)
             movement();
         teleport();
+        spray();
     }     
+    
+    public void spray()
+    {}
 
     public void die()
     {

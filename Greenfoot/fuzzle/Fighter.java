@@ -54,7 +54,7 @@ public class Fighter extends Final
     public void move()
     { 
         int speed = this.speed;
-        while (Greenfoot.isKeyDown("shift"))
+        if (Greenfoot.isKeyDown("shift"))
         {
             speed=this.speed/2;
         }

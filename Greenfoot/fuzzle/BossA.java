@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
 /**
  * Write a description of class BossA here.
  * 
@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BossA extends Boss
 {
-
+    ArrayList<Bullets> fire = new ArrayList<Bullets>(); 
+    int counter2=0;
     /**
      * Act - do whatever the BossA wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,6 +18,25 @@ public class BossA extends Boss
     {
         super(2000,50);
 
+        fire.add(new Type1(135));
+        fire.add(new Type1(90));
+        fire.add(new Type1(45));
+
     }    
 
+    public void spray()
+    {
+        World world = getWorld();
+        counter2++;
+        for (Bullets x:fire )
+        {
+            world.addObject(x,this.getX(),this.getY());
+        }
+        if (counter2>10)
+        { counter2=0;
+            fire.add(new Type1(135));
+            fire.add(new Type1(90));
+            fire.add(new Type1(45));
+        }
+    }
 }

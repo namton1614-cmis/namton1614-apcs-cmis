@@ -1,20 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Type1 here.
+ * Write a description of class BossB here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Type1 extends Bullets
+public class BossB extends Boss
 {
     /**
-     * Act - do whatever the Type1 wants to do. This method is called whenever
+     * Act - do whatever the BossB wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Type1( int direction) 
+    public  BossB() 
     {
+        super(2000,50);
 
-        setRotation(direction);
     }    
 }
