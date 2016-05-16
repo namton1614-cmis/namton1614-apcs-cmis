@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=Bullets
 comment0.text=\n\ Write\ a\ description\ of\ class\ Bullets\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=void\ act()
+comment1.params=turn
+comment1.target=Bullets(int)
 comment2.params=
-comment2.target=void\ attack()
+comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ movement()
-numComments=4
+comment3.target=void\ attack()
+comment4.params=
+comment4.target=void\ movement()
+numComments=5

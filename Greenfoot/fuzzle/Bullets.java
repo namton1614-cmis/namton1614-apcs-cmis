@@ -10,10 +10,24 @@ public abstract class Bullets extends Final
 {
     int direction=1;
     int counter=0;
+    int turn;
+    public Bullets(int turn)
+    {
+    this.turn=turn;
+    }
     public void act() 
     {
         attack();
-        turn(direction);
+        if (direction==1)
+        {
+            turn(turn);
+            direction*=-1;
+        }
+        else if (direction==-1)
+        {
+
+            direction*=-1;
+        }
         if(getWorld()!=null)
             movement();
     }    
@@ -39,12 +53,12 @@ public abstract class Bullets extends Final
         }
         else if (counter<100)
         {
-            move(1); 
+            move(2); 
             counter++;
         }
         else 
-        {counter=0;
-            direction*=-1;
+        {
+            counter=0;
         }
     }
 

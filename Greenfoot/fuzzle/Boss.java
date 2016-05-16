@@ -30,9 +30,8 @@ public class Boss extends Final
             die();
         }
         powerStep();
-        if (getWorld()!=null)
-            movement();
-        teleport();
+       
+       teleport();
         spray();
     }     
     
@@ -68,6 +67,7 @@ public class Boss extends Final
             }
 
         }
+                tele++;
     }
 
     public void spawnPower()
@@ -78,15 +78,15 @@ public class Boss extends Final
 
     }
 
-    public void movement()
-    { 
-        int up=(int)(Math.random()*21)-10;
-        int right=(int)(Math.random()*21)-10;
+    // public void movement()
+    // { 
+        // int up=(int)(Math.random()*21)-10;
+        // int right=(int)(Math.random()*21)-10;
 
-        setLocation(getX()+right,getY());
-        setLocation(getX(),getY()-up);
-        tele++;
-    }
+        // setLocation(getX()+right,getY());
+        // setLocation(getX(),getY()-up);
+        // tele++;
+    // }
 
     public void teleport()
     {

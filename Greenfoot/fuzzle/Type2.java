@@ -6,15 +6,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Type1 extends Bullets
+public class Type2 extends Bullets
 {
     /**
      * Act - do whatever the Type1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Type1( int direction ) 
+    public Type2( int direction ) 
     {
-        super(0);
+        super(1);
         setRotation(direction);
     }    
 }

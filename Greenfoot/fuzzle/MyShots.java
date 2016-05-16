@@ -29,7 +29,7 @@ public class MyShots extends Final
     public void movement( )
     {
 
-        if ( this.isAtEdge()==true)
+        if ( this.getY()==0)
         {
             World world = getWorld();
             world.removeObject(this);

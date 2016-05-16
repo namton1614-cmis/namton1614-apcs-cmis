@@ -18,9 +18,9 @@ public class BossA extends Boss
     {
         super(2000,50);
 
-        fire.add(new Type1(135));
-        fire.add(new Type1(90));
-        fire.add(new Type1(45));
+        fire.add(new Type2(135));
+        fire.add(new Type2(90));
+        fire.add(new Type2(45));
 
     }    
 
@@ -34,9 +34,15 @@ public class BossA extends Boss
         }
         if (counter2>10)
         { counter2=0;
-            fire.add(new Type1(135));
-            fire.add(new Type1(90));
-            fire.add(new Type1(45));
+            fire.add(new Type2(0));
+            fire.add(new Type2(45));
+            fire.add(new Type2(90));
+            fire.add(new Type2(135));
+            fire.add(new Type2(180));
+            fire.add(new Type2(225));
+            fire.add(new Type2(270));
+            fire.add(new Type2(315));
+            fire.add(new Type2(360));
         }
     }
 }
