@@ -38,7 +38,7 @@ public class Power extends Final
         if (Fighter!=null)
         {World world = getWorld();
             world.removeObject(this);
-            Fighter.increasePower(5);
+            Fighter.increasePower(25);
         }   
     }
 }

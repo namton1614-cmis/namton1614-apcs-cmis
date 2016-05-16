@@ -36,5 +36,7 @@ public class FINALBOSS extends World
         addObject(bossa,620,199);
         Power power = new Power();
         addObject(power,245,290);
+        removeObject(type1);
+        removeObject(power);
     }
 }

@@ -25,23 +25,23 @@ public class Boss extends Final
      */
     public void act() 
     {
+
+        powerStep();
+        movement();
+        teleport();
+        spray();
         if (hp<0)
         {
-            die();
+            nextboss();
         }
-        powerStep();
-       
-       teleport();
-        spray();
     }     
-    
+
     public void spray()
     {}
 
-    public void die()
+   public void nextboss()
     {
-        World world = getWorld();
-        world.removeObject(this);
+      
     }
 
     public void damage()
@@ -67,7 +67,7 @@ public class Boss extends Final
             }
 
         }
-                tele++;
+        tele++;
     }
 
     public void spawnPower()
@@ -78,15 +78,15 @@ public class Boss extends Final
 
     }
 
-    // public void movement()
-    // { 
-        // int up=(int)(Math.random()*21)-10;
-        // int right=(int)(Math.random()*21)-10;
+    public void movement()
+    { 
+        int up=(int)(Math.random()*21)-10;
+        int right=(int)(Math.random()*21)-10;
 
-        // setLocation(getX()+right,getY());
-        // setLocation(getX(),getY()-up);
-        // tele++;
-    // }
+        setLocation(getX()+right,getY());
+        setLocation(getX(),getY()-up);
+        tele++;
+    }
 
     public void teleport()
     {
@@ -94,7 +94,7 @@ public class Boss extends Final
         tp.add(200);
         tp.add(400); 
         tp.add(600);        tp.add(800);
-       int i =(int)(Math.random()*4);
+        int i =(int)(Math.random()*4);
         if (tele>100)
         {
             tele=0;

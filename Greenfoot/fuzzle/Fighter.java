@@ -28,6 +28,7 @@ public class Fighter extends Final
         {
             attack();
         }
+
     }
 
     public void attack()
@@ -36,6 +37,7 @@ public class Fighter extends Final
         TypeA typeA = new TypeA();
         TypeB typeB = new TypeB();
         TypeC typeC = new TypeC();
+                TypeD typeD = new TypeD();
         if (counter==5)
         {
             World world = getWorld();
@@ -44,6 +46,10 @@ public class Fighter extends Final
             {
                 world.addObject(typeB,this.getX(),this.getY());
                 world.addObject(typeC,this.getX(),this.getY());
+            }
+            if (magicpower>100)
+            {
+                world.addObject(typeD,this.getX(),this.getY());
             }
 
             counter=0;
@@ -78,7 +84,7 @@ public class Fighter extends Final
 
     public void increasePower ( int power)
     {
-      magicpower+=power;
+        magicpower+=power;
     }
 
 }

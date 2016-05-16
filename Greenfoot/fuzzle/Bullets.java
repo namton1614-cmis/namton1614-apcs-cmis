@@ -11,6 +11,7 @@ public abstract class Bullets extends Final
     int direction=1;
     int counter=0;
     int turn;
+    int counter2=0;
     public Bullets(int turn)
     {
     this.turn=turn;
@@ -46,15 +47,17 @@ public abstract class Bullets extends Final
 
     public void movement( )
     {
-        if (  this.isAtEdge()==true)
+        if (  this.isAtEdge()==true )
         {
             World world = getWorld();
             world.removeObject(this);
+
         }
         else if (counter<100)
         {
-            move(2); 
+            move(4); 
             counter++;
+            counter2++;
         }
         else 
         {
