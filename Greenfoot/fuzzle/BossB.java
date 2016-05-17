@@ -16,7 +16,7 @@ public class BossB extends Boss
      */
     public  BossB() 
     {
-        super(50,50);
+        super(200,50);
 
     }    
     public void spray()
@@ -39,5 +39,15 @@ public class BossB extends Boss
             fire.add(new Type1(315));
             fire.add(new Type1(360));
         }
+    }
+    
+    
+    public void nextboss()
+    {
+        World world = getWorld();
+
+       BossC bossC = new BossC();
+        world.addObject(bossC,this.getX(),this.getY());
+        world.removeObject(this);
     }
 }

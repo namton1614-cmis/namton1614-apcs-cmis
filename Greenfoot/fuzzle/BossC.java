@@ -6,35 +6,24 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BossA extends Boss
+public class BossC extends Boss
 {
     ArrayList<Bullets> fire = new ArrayList<Bullets>(); 
+    ArrayList<Bullets> fire2 = new ArrayList<Bullets>(); 
+    ArrayList<Bullets> fire3 = new ArrayList<Bullets>(); 
     int counter2=0;
     /**
      * Act - do whatever the BossA wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public  BossA() 
+    public  BossC() 
     {
-        super(100,50);
-        fire.add(new Type1(0));
-        fire.add(new Type1(45));
+        super(500,50);
+        
         fire.add(new Type1(90));
-        fire.add(new Type1(135));
-        fire.add(new Type1(180));
-        fire.add(new Type1(225));
-        fire.add(new Type1(270));
-        fire.add(new Type1(315));
-        fire.add(new Type1(360));
-        fire.add(new Type2(0));
-        fire.add(new Type2(45));
-        fire.add(new Type2(90));
-        fire.add(new Type2(135));
-        fire.add(new Type2(180));
-        fire.add(new Type2(225));
-        fire.add(new Type2(270));
-        fire.add(new Type2(315));
-        fire.add(new Type2(360));
+        fire2.add(new Type1(90));
+        fire3.add(new Type1(90));
+
     }    
 
     public void spray()
@@ -43,11 +32,19 @@ public class BossA extends Boss
         counter2++;
         for (Bullets x:fire )
         {
+            world.addObject(x,this.getX()+100,this.getY());
+        }
+        for (Bullets x:fire2 )
+        {
+            world.addObject(x,this.getX()-100,this.getY());
+        }
+        for (Bullets x:fire3 )
+        {
             world.addObject(x,this.getX(),this.getY());
         }
         if (counter2>10)
         { counter2=0;
-
+       
         }
     }
 
