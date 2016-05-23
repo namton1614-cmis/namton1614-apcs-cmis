@@ -38,7 +38,6 @@ public class Hedgehog extends Enemy implements Exploder
                 turn(180);
                 direction*=-1;
                 getImage().mirrorVertically();
-                System.out.print(object);
                 explodeCounter++;
 
                 if (this.isAtEdge()==true)

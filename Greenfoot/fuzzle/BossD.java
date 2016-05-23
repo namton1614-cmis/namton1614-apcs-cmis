@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BossC extends Boss
+public class BossD extends Boss
 {
     ArrayList<Bullets> fire = new ArrayList<Bullets>(); 
     int counter2=0;
@@ -14,9 +14,9 @@ public class BossC extends Boss
      * Act - do whatever the BossA wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public  BossC() 
+    public  BossD() 
     {
-        super(220,50);
+        super(200,50);
 
     }    
     public void spray()
@@ -46,8 +46,8 @@ public class BossC extends Boss
     {
         World world = getWorld();
 
-       BossD bossD = new BossD();
-        world.addObject(bossD,this.getX(),this.getY());
+        Greenfoot.setWorld(new Win());
+
         world.removeObject(this);
     }
 }

@@ -93,7 +93,8 @@ public class Boss extends Final
         ArrayList<Integer> tp = new ArrayList<Integer>(); 
         tp.add(200);
         tp.add(400); 
-        tp.add(600);        tp.add(800);
+        tp.add(600);     
+        tp.add(800);
         int i =(int)(Math.random()*4);
         if (tele>100)
         {
