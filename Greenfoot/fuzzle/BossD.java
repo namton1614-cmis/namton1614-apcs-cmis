@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BossD extends Boss
+public class BossD extends Boss implements ChangeBoss
 {
     ArrayList<Bullets> fire = new ArrayList<Bullets>(); 
     int counter2=0;
@@ -45,9 +45,9 @@ public class BossD extends Boss
     public void nextboss()
     {
         World world = getWorld();
-
+        world.removeObject(this);
         Greenfoot.setWorld(new Win());
 
-        world.removeObject(this);
+
     }
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BossA extends Boss
+public class BossA extends Boss implements ChangeBoss
 {
     ArrayList<Bullets> fire = new ArrayList<Bullets>(); 
     ArrayList<Bullets> fire2 = new ArrayList<Bullets>(); 

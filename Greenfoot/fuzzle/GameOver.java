@@ -17,5 +17,23 @@ public class GameOver extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        Greenfoot.setSpeed(50);
+        prepare();
+    }
+
+    public void newLevel()
+    {
+
+        Greenfoot.setWorld(new Level1());
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Heh heh = new Heh();
+        addObject(heh,90,128);
     }
 }

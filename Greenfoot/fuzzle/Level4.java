@@ -189,4 +189,10 @@ public class Level4 extends Levels
         Block block15 = new Block();
         addObject(block15,11,6);
     }
+    
+           public void newLevel()
+    {
+
+        Greenfoot.setWorld(new Level5());
+    }
 }
