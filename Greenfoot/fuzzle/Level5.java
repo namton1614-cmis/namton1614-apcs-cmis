@@ -100,15 +100,14 @@ public class Level5 extends Levels
         Robot robot = new Robot();
         addObject(robot,7,4);
         RightSnek rightsnek = new RightSnek();
-        addObject(rightsnek,15,8);
+        addObject(rightsnek,15,9);
         LeftSnek leftsnek = new LeftSnek();
         addObject(leftsnek,9,7);
         Wall wall = new Wall();
         addObject(wall,7,8);
         Cactus cactus = new Cactus();
         addObject(cactus,7,9);
-        RightSnek rightsnek2 = new RightSnek();
-        addObject(rightsnek2,15,9);
+
         Exit exit = new Exit();
         addObject(exit,0,9);
         LeftSnek leftsnek2 = new LeftSnek();
@@ -117,6 +116,7 @@ public class Level5 extends Levels
         addObject(leftsnek3,9,1);
         RightSnek rightsnek3 = new RightSnek();
         addObject(rightsnek3,4,2);
+
         Bomb bomb = new Bomb();
         addObject(bomb,1,0);
         Cactus cactus2 = new Cactus();
@@ -149,11 +149,11 @@ public class Level5 extends Levels
         Wall wall11 = new Wall();
         addObject(wall11,13,4);
         Wall wall12 = new Wall();
-        addObject(wall12,14,4);
+        addObject(wall12,15,4);
         Wall wall13 = new Wall();
         addObject(wall13,2,4);
         Wall wall14 = new Wall();
-        addObject(wall14,1,4);
+        addObject(wall14,0,4);
         Flower flower = new Flower();
         addObject(flower,15,0);
         Flower flower2 = new Flower();
@@ -163,9 +163,9 @@ public class Level5 extends Levels
         Flower flower4 = new Flower();
         addObject(flower4,12,0);
         Flower flower5 = new Flower();
-        addObject(flower5,15,4);
+        addObject(flower5,14,4);
         Cactus cactus3 = new Cactus();
-        addObject(cactus3,0,4);
+        addObject(cactus3,1,4);
         Wall wall15 = new Wall();
         addObject(wall15,5,8);
         Wall wall16 = new Wall();
@@ -184,11 +184,18 @@ public class Level5 extends Levels
         addObject(wall21,6,0);
         Water water30 = new Water();
         addObject(water30,5,0);
+        Block block12 = new Block();
+        addObject(block12,14,1);
+        Block block13 = new Block();
+        addObject(block13,14,2);
+        Block block14 = new Block();
+        addObject(block14,14,3);
+     
     }
 
     public void newLevel()
     {
 
-        Greenfoot.setWorld(new FINALBOSS());
+        Greenfoot.setWorld(new Level6());
     }
 }

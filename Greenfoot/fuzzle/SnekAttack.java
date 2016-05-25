@@ -33,7 +33,7 @@ public abstract class SnekAttack extends Enemy
     public void movement( )
     {
         Actor object = getOneObjectAtOffset(direction, 0, Object.class);
-        if (object!=null || this.isAtEdge()==true)
+        if (object!=null || this.getX()==0 || this.getX()==15)
         {
             World world = getWorld();
             world.removeObject(this);
