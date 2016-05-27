@@ -23,7 +23,7 @@ public class BossA extends Boss implements ChangeBoss
         fire.add(new Type1(90));
         fire2.add(new Type1(90));
         fire3.add(new Type1(90));
-
+ 
     }    
 
     public void spray()

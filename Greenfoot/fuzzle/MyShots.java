@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyShots extends Final
+public abstract class MyShots extends Final
 {
     int speed=20;
     public void act() 

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Boss extends Final
+public abstract class Boss extends Final
 {
     private int hp;
     private int noPower;
@@ -25,7 +25,6 @@ public class Boss extends Final
      */
     public void act() 
     {
-
         powerStep();
         movement();
         teleport();
@@ -39,9 +38,9 @@ public class Boss extends Final
     public void spray()
     {}
 
-   public void nextboss()
+    public void nextboss()
     {
-      
+
     }
 
     public void damage()

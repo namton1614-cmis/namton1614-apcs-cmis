@@ -16,20 +16,8 @@ public class BossD extends Boss implements ChangeBoss
      */
     public  BossD() 
     {
-        super(200,50);
-
-    }    
-    public void spray()
-    {
-        World world = getWorld();
-        counter2++;
-        for (Bullets x:fire )
-        {
-            world.addObject(x,this.getX(),this.getY());
-        }
-        if (counter2>10)
-        { counter2=0;
-            fire.add(new Type1(0));
+        super(250,50);
+      fire.add(new Type1(0));
             fire.add(new Type1(45));
             fire.add(new Type1(90));
             fire.add(new Type1(135));
@@ -38,6 +26,18 @@ public class BossD extends Boss implements ChangeBoss
             fire.add(new Type1(270));
             fire.add(new Type1(315));
             fire.add(new Type1(360));
+    }    
+    public void spray()
+    {
+        World world = getWorld();
+        counter2++;
+        while ( fire.size()>0 )
+        {
+            world.addObject(fire.get(0),this.getX(),this.getY());
+        }
+        if (counter2>10)
+        { counter2=0;
+      
         }
     }
     

@@ -16,7 +16,6 @@ public class Level6 extends Levels
     public Level6()
     {    
         super(16, 12, 60);   
- 
 
         prepare();
     }
@@ -24,8 +23,6 @@ public class Level6 extends Levels
     private void prepare()
     {
 
-        Water water = new Water();
-        addObject(water,5,3);
         Water water2 = new Water();
         addObject(water2,5,4);
         Water water3 = new Water();
@@ -123,7 +120,7 @@ public class Level6 extends Levels
         Wall wall27 = new Wall();
         addObject(wall27,8,2);
         Wall wall28 = new Wall();
-        addObject(wall28,8,1);
+        addObject(wall28,8,0);
         Wall wall29 = new Wall();
         addObject(wall29,9,2);
         Wall wall30 = new Wall();
@@ -212,6 +209,10 @@ public class Level6 extends Levels
         addObject(wall62,14,3);
         Robot robot = new Robot();
         addObject(robot,7,9);
+        FilledWater filledwater = new FilledWater();
+        addObject(filledwater,5,3);
+        Block block6 = new Block();
+        addObject(block6,14,1);
     }
 
     public void newLevel()
