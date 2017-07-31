@@ -9,10 +9,6 @@ public class Euler6
         for (int i =1;i<=100;i++)
         {
             sumSquare+= i*i;
-        }
-
-        for (int i =1;i<=100;i++)
-        {
             squareSum+=i;
         }
 
